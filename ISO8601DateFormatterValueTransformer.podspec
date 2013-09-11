@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary  = 'A small library that integrates ISO8601DateFormatter with RKValueTransformers'
   s.homepage = 'https://github.com/blakewatters/ISO8601DateFormatterValueTransformer'
   s.authors  = { 'Blake Watters' => 'blakewatters@gmail.com' }
-  s.source   = { :git => 'https://github.com/RestKit/RKValueTransformers.git', :tag => "v#{s.version}" }
+  s.source   = { :git => 'https://github.com/blakewatters/ISO8601DateFormatterValueTransformer.git', :tag => "v#{s.version}" }
   s.source_files = 'Code'
   s.requires_arc = true
   
