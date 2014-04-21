@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,7 +17,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "25A0134717DBC212006C2BD6"
-               BuildableName = "iOS Tests.octest"
+               BuildableName = "iOS Tests.xctest"
                BlueprintName = "iOS Tests"
                ReferencedContainer = "container:ISO8601DateFormatterValueTransformerTests.xcodeproj">
             </BuildableReference>
