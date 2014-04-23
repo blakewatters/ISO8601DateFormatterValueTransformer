@@ -19,6 +19,10 @@
 /* Begin PBXFileReference section */
 		169BB4EE1051441592FCCA22 /* libPods-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		193F69FEEBC443C283E5F0E4 /* Pods-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.xcconfig"; path = "../Pods/Pods-ios.xcconfig"; sourceTree = "<group>"; };
+		252093EB190863760053B9B7 /* ISO8601DateFormatterValueTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatterValueTransformer.h; sourceTree = "<group>"; };
+		252093EC190863760053B9B7 /* ISO8601DateFormatterValueTransformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatterValueTransformer.m; sourceTree = "<group>"; };
+		252093ED190863760053B9B7 /* RKISO8601DateFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKISO8601DateFormatter.h; sourceTree = "<group>"; };
+		252093EE190863760053B9B7 /* RKISO8601DateFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKISO8601DateFormatter.m; sourceTree = "<group>"; };
 		252CCE6A17E0B7B400B7F0BF /* ISO8601DateFormatterValueTransformerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatterValueTransformerTests.m; sourceTree = "<group>"; };
 		2576CBBB1905C41A00F4C3E0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		25A0134817DBC212006C2BD6 /* iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,9 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		252093EA190863760053B9B7 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				252093EB190863760053B9B7 /* ISO8601DateFormatterValueTransformer.h */,
+				252093EC190863760053B9B7 /* ISO8601DateFormatterValueTransformer.m */,
+				252093ED190863760053B9B7 /* RKISO8601DateFormatter.h */,
+				252093EE190863760053B9B7 /* RKISO8601DateFormatter.m */,
+			);
+			name = Code;
+			path = ../Code;
+			sourceTree = "<group>";
+		};
 		25A0133C17DBC1F4006C2BD6 = {
 			isa = PBXGroup;
 			children = (
+				252093EA190863760053B9B7 /* Code */,
 				252CCE6A17E0B7B400B7F0BF /* ISO8601DateFormatterValueTransformerTests.m */,
 				25A0134A17DBC212006C2BD6 /* Frameworks */,
 				25A0134917DBC212006C2BD6 /* Products */,

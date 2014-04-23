@@ -18,12 +18,12 @@
 //  limitations under the License.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #define EXP_SHORTHAND
 #import "Expecta.h"
 #import "ISO8601DateFormatterValueTransformer.h"
 
-@interface RKValueTransformers_RKISO8601DateFormatterTests : SenTestCase
+@interface RKValueTransformers_RKISO8601DateFormatterTests : XCTestCase
 @end
 
 @implementation RKValueTransformers_RKISO8601DateFormatterTests

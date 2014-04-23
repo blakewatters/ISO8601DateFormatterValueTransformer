@@ -1,8 +1,6 @@
 PODS:
   - Expecta (0.3.0)
-  - ISO8601DateFormatter (0.7)
-  - ISO8601DateFormatterValueTransformer (0.7.0):
-    - ISO8601DateFormatter (~> 0.7)
+  - ISO8601DateFormatterValueTransformer (0.6.0):
     - RKValueTransformers (~> 1.1.0)
   - RKValueTransformers (1.1.0)
 
@@ -16,8 +14,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Expecta: 322f1dc42610106a5ba9871b4924cf1635d80833
-  ISO8601DateFormatter: 00944e437ea647f4244454ce8809d313861d08de
-  ISO8601DateFormatterValueTransformer: 1e6305edf9a63c55bd53f18edca0429d49985894
+  ISO8601DateFormatterValueTransformer: db1acb188ffb0f87109a793977f750067c351efe
   RKValueTransformers: 286c8280b6f2570032d87d119863f32bc227799b
 
 COCOAPODS: 0.32.1
