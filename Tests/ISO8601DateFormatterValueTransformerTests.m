@@ -18,41 +18,42 @@
 //  limitations under the License.
 //
 
-#import <XCTest/XCTest.h>
+#import <SenTestingKit/SenTestingKit.h>
 #define EXP_SHORTHAND
 #import "Expecta.h"
 #import "ISO8601DateFormatterValueTransformer.h"
 
-@interface RKValueTransformers_ISO8601DateFormatterTests : XCTestCase
+@interface RKValueTransformers_RKISO8601DateFormatterTests : SenTestCase
 @end
 
-@implementation RKValueTransformers_ISO8601DateFormatterTests
+@implementation RKValueTransformers_RKISO8601DateFormatterTests
 
 - (void)testValidationFromStringToDate
 {
-    ISO8601DateFormatter *valueTransformer = [ISO8601DateFormatter new];
+    RKISO8601DateFormatter *valueTransformer = [RKISO8601DateFormatter new];
     BOOL success = [valueTransformer validateTransformationFromClass:[NSString class] toClass:[NSDate class]];
     expect(success).to.beTruthy();
 }
 
 - (void)testValidationFromDateToString
 {
-    ISO8601DateFormatter *valueTransformer = [ISO8601DateFormatter new];
+    RKISO8601DateFormatter *valueTransformer = [RKISO8601DateFormatter new];
     BOOL success = [valueTransformer validateTransformationFromClass:[NSDate class] toClass:[NSString class]];
     expect(success).to.beTruthy();
 }
 
 - (void)testValidationFailure
 {
-    ISO8601DateFormatter *valueTransformer = [ISO8601DateFormatter new];
+    RKISO8601DateFormatter *valueTransformer = [RKISO8601DateFormatter new];
     BOOL success = [valueTransformer validateTransformationFromClass:[NSURL class] toClass:[NSString class]];
     expect(success).to.beFalsy();
 }
 
 - (void)testTransformationFromDateToString
 {
-    ISO8601DateFormatter *valueTransformer = [ISO8601DateFormatter new];
-    valueTransformer.defaultTimeZone = [NSTimeZone timeZoneWithName:@"UTC"];
+    RKISO8601DateFormatter *valueTransformer = [RKISO8601DateFormatter new];
+    valueTransformer.timeZone = [NSTimeZone timeZoneWithName:@"UTC"];
+    valueTransformer.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
     valueTransformer.includeTime = YES;
     id value = nil;
     NSError *error = nil;
@@ -64,8 +65,9 @@
 
 - (void)testTransformationFromStringToDAte
 {
-    ISO8601DateFormatter *valueTransformer = [ISO8601DateFormatter new];
-    valueTransformer.defaultTimeZone = [NSTimeZone timeZoneWithName:@"UTC"];
+    RKISO8601DateFormatter *valueTransformer = [RKISO8601DateFormatter new];
+    valueTransformer.timeZone = [NSTimeZone timeZoneWithName:@"UTC"];
+    valueTransformer.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
     valueTransformer.includeTime = YES;
     id value = nil;
     NSError *error = nil;
@@ -77,7 +79,7 @@
 
 - (void)testTransformationFailureWithUntransformableInputValue
 {
-    ISO8601DateFormatter *valueTransformer = [ISO8601DateFormatter new];
+    RKISO8601DateFormatter *valueTransformer = [RKISO8601DateFormatter new];
     id value = nil;
     NSError *error = nil;
     BOOL success = [valueTransformer transformValue:@[] toValue:&value ofClass:[NSString class] error:&error];
@@ -90,7 +92,7 @@
 
 - (void)testTransformationFailureFailureWithInvalidInputValue
 {
-    ISO8601DateFormatter *valueTransformer = [ISO8601DateFormatter new];
+    RKISO8601DateFormatter *valueTransformer = [RKISO8601DateFormatter new];
     id value = nil;
     NSError *error = nil;
     BOOL success = [valueTransformer transformValue:@":*7vxck#sf#adsa" toValue:&value ofClass:[NSDate class] error:&error];
@@ -103,7 +105,7 @@
 
 - (void)testTransformationFailureWithInvalidDestinationClass
 {
-    ISO8601DateFormatter *valueTransformer = [ISO8601DateFormatter new];
+    RKISO8601DateFormatter *valueTransformer = [RKISO8601DateFormatter new];
     id value = nil;
     NSError *error = nil;
     BOOL success = [valueTransformer transformValue:@"http://restkit.org" toValue:&value ofClass:[NSData class] error:&error];

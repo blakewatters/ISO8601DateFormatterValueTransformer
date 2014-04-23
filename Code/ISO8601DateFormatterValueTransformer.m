@@ -20,12 +20,13 @@
 
 #import "ISO8601DateFormatterValueTransformer.h"
 
-@implementation ISO8601DateFormatter (RKValueTransformers)
+@implementation RKISO8601DateFormatter (RKValueTransformers)
 
 + (instancetype)defaultISO8601DateFormatter
 {
-    ISO8601DateFormatter *iso8601DateFormatter = [ISO8601DateFormatter new];
-    iso8601DateFormatter.defaultTimeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
+    RKISO8601DateFormatter *iso8601DateFormatter = [RKISO8601DateFormatter new];
+    iso8601DateFormatter.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
+    iso8601DateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
     iso8601DateFormatter.includeTime = YES;
     iso8601DateFormatter.parsesStrictly = YES;
     return iso8601DateFormatter;
