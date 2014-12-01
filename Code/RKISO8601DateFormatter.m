@@ -93,7 +93,7 @@ static NSMutableDictionary *timeZonesByOffset;
 
 - (NSCalendar *)newCalendar
 {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:RK_CALENDAR_IDENTIFIER_GREGORIAN];
+	NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:RK_CALENDAR_IDENTIFIER_GREGORIAN];
 	calendar.firstWeekday = 2; //Monday
 	calendar.timeZone = self.timeZone;
     calendar.locale = self.locale;
@@ -186,7 +186,7 @@ static NSMutableDictionary *timeZonesByOffset;
 	NSDate *now = [NSDate date];
 
 	NSDateComponents *components = [[NSDateComponents alloc] init];
-    NSDateComponents *nowComponents = [self.parsingCalendar components:(RK_CALENDAR_UNIT_YEAR | RK_CALENDAR_UNIT_MONTH | RK_CALENDAR_UNIT_DAY) fromDate:now];
+	NSDateComponents *nowComponents = [self.parsingCalendar components:(RK_CALENDAR_UNIT_YEAR | RK_CALENDAR_UNIT_MONTH | RK_CALENDAR_UNIT_DAY) fromDate:now];
 
 	NSUInteger
     //Date
@@ -740,14 +740,14 @@ static NSMutableDictionary *timeZonesByOffset;
 - (NSString *)weekDateStringForDate:(NSDate *)date
 {
 	self.unparsingCalendar.timeZone = self.timeZone;
-    self.unparsingCalendar.locale = self.locale;
-    NSDateComponents *components = [self.unparsingCalendar components:RK_CALENDAR_UNIT_YEAR | RK_CALENDAR_UNIT_WEEKDAY | RK_CALENDAR_UNIT_DAY fromDate:date];
-    
-    //Determine the ordinal date.
-    NSDateComponents *startOfYearComponents = [self.unparsingCalendar components:RK_CALENDAR_UNIT_YEAR fromDate:date];
-    startOfYearComponents.month = 1;
-    startOfYearComponents.day = 1;
-    NSDateComponents *ordinalComponents = [self.unparsingCalendar components:RK_CALENDAR_UNIT_DAY fromDate:[self.unparsingCalendar dateFromComponents:startOfYearComponents] toDate:date options:0];
+	self.unparsingCalendar.locale = self.locale;
+	NSDateComponents *components = [self.unparsingCalendar components:RK_CALENDAR_UNIT_YEAR | RK_CALENDAR_UNIT_WEEKDAY | RK_CALENDAR_UNIT_DAY fromDate:date];
+
+	//Determine the ordinal date.
+	NSDateComponents *startOfYearComponents = [self.unparsingCalendar components:RK_CALENDAR_UNIT_YEAR fromDate:date];
+	startOfYearComponents.month = 1;
+	startOfYearComponents.day = 1;
+	NSDateComponents *ordinalComponents = [self.unparsingCalendar components:RK_CALENDAR_UNIT_DAY fromDate:[self.unparsingCalendar dateFromComponents:startOfYearComponents] toDate:date options:0];
 	ordinalComponents.day += 1;
 
 	enum {
