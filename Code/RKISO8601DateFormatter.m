@@ -25,6 +25,20 @@ unichar RKISO8601DefaultTimeSeparatorCharacter = ':';
 #define RK_ISOTIMEZONE_UTC_FORMAT @"Z"
 #define RK_ISOTIMEZONE_OFFSET_FORMAT @"%+.2ld%.2ld"
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 || MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_10
+#define RK_CALENDAR_UNIT_YEAR NSCalendarUnitYear
+#define RK_CALENDAR_UNIT_MONTH NSCalendarUnitMonth
+#define RK_CALENDAR_UNIT_DAY NSCalendarUnitDay
+#define RK_CALENDAR_UNIT_WEEKDAY NSCalendarUnitWeekday
+#define RK_CALENDAR_IDENTIFIER_GREGORIAN NSCalendarIdentifierGregorian
+#else
+#define RK_CALENDAR_UNIT_YEAR NSYearCalendarUnit
+#define RK_CALENDAR_UNIT_MONTH NSMonthCalendarUnit
+#define RK_CALENDAR_UNIT_DAY NSDayCalendarUnit
+#define RK_CALENDAR_UNIT_WEEKDAY NSWeekdayCalendarUnit
+#define RK_CALENDAR_IDENTIFIER_GREGORIAN NSGregorianCalendar
+#endif
+
 // Parsing Helpers
 static NSUInteger read_segment(const unsigned char *str, const unsigned char **next, NSUInteger *out_num_digits);
 static NSUInteger read_segment_4digits(const unsigned char *str, const unsigned char **next, NSUInteger *out_num_digits);
@@ -79,7 +93,7 @@ static NSMutableDictionary *timeZonesByOffset;
 
 - (NSCalendar *)newCalendar
 {
-	NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:RK_CALENDAR_IDENTIFIER_GREGORIAN];
 	calendar.firstWeekday = 2; //Monday
 	calendar.timeZone = self.timeZone;
     calendar.locale = self.locale;
@@ -172,7 +186,7 @@ static NSMutableDictionary *timeZonesByOffset;
 	NSDate *now = [NSDate date];
 
 	NSDateComponents *components = [[NSDateComponents alloc] init];
-	NSDateComponents *nowComponents = [self.parsingCalendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:now];
+    NSDateComponents *nowComponents = [self.parsingCalendar components:(RK_CALENDAR_UNIT_YEAR | RK_CALENDAR_UNIT_MONTH | RK_CALENDAR_UNIT_DAY) fromDate:now];
 
 	NSUInteger
     //Date
@@ -727,13 +741,13 @@ static NSMutableDictionary *timeZonesByOffset;
 {
 	self.unparsingCalendar.timeZone = self.timeZone;
     self.unparsingCalendar.locale = self.locale;
-	NSDateComponents *components = [self.unparsingCalendar components:NSYearCalendarUnit | NSWeekdayCalendarUnit | NSDayCalendarUnit fromDate:date];
-
-	//Determine the ordinal date.
-	NSDateComponents *startOfYearComponents = [self.unparsingCalendar components:NSYearCalendarUnit fromDate:date];
-	startOfYearComponents.month = 1;
-	startOfYearComponents.day = 1;
-	NSDateComponents *ordinalComponents = [self.unparsingCalendar components:NSDayCalendarUnit fromDate:[self.unparsingCalendar dateFromComponents:startOfYearComponents] toDate:date options:0];
+    NSDateComponents *components = [self.unparsingCalendar components:RK_CALENDAR_UNIT_YEAR | RK_CALENDAR_UNIT_WEEKDAY | RK_CALENDAR_UNIT_DAY fromDate:date];
+    
+    //Determine the ordinal date.
+    NSDateComponents *startOfYearComponents = [self.unparsingCalendar components:RK_CALENDAR_UNIT_YEAR fromDate:date];
+    startOfYearComponents.month = 1;
+    startOfYearComponents.day = 1;
+    NSDateComponents *ordinalComponents = [self.unparsingCalendar components:RK_CALENDAR_UNIT_DAY fromDate:[self.unparsingCalendar dateFromComponents:startOfYearComponents] toDate:date options:0];
 	ordinalComponents.day += 1;
 
 	enum {
