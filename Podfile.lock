@@ -12,12 +12,12 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   ISO8601DateFormatterValueTransformer:
-    :path: .
+    :path: "."
 
 SPEC CHECKSUMS:
-  Expecta: 322f1dc42610106a5ba9871b4924cf1635d80833
-  ISO8601DateFormatter: 00944e437ea647f4244454ce8809d313861d08de
-  ISO8601DateFormatterValueTransformer: 1e6305edf9a63c55bd53f18edca0429d49985894
-  RKValueTransformers: 286c8280b6f2570032d87d119863f32bc227799b
+  Expecta: 917bda2935b63ca7175741b8cf1b26796db6205f
+  ISO8601DateFormatter: ab926648eebe497f4d167c0fd083992f959f1274
+  ISO8601DateFormatterValueTransformer: f9ffeb6841f2a56d01b0a47b4cf1becf20954147
+  RKValueTransformers: f7883335ebb32fedf76157c1195762f1f0183147
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.36.3
