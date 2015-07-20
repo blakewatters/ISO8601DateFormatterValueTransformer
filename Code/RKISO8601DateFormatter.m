@@ -25,8 +25,8 @@ unichar RKISO8601DefaultTimeSeparatorCharacter = ':';
 #define RK_ISOTIMEZONE_UTC_FORMAT @"Z"
 #define RK_ISOTIMEZONE_OFFSET_FORMAT @"%+.2ld%.2ld"
 
-#if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && (__IPHONE_OS_VERSION_MAX_ALLOWED < 80000)) || \
-    (defined(MAC_OS_X_VERSION_MAX_ALLOWED) && (MAC_OS_X_VERSION_MAX_ALLOWED < MAC_OS_X_VERSION_10_10))
+#if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && (__IPHONE_OS_VERSION_MAX_ALLOWED < 70000)) || \
+    (defined(MAC_OS_X_VERSION_MAX_ALLOWED) && (MAC_OS_X_VERSION_MAX_ALLOWED < MAC_OS_X_VERSION_10_9))
 #define NSCalendarUnitYear NSYearCalendarUnit
 #define NSCalendarUnitMonth NSMonthCalendarUnit
 #define NSCalendarUnitDay NSDayCalendarUnit
