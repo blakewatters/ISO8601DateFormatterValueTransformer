@@ -25,19 +25,20 @@ unichar RKISO8601DefaultTimeSeparatorCharacter = ':';
 #define RK_ISOTIMEZONE_UTC_FORMAT @"Z"
 #define RK_ISOTIMEZONE_OFFSET_FORMAT @"%+.2ld%.2ld"
 
-#if (__IPHONE_OS_VERSION_MIN_ALLOWED >= 80000 || MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_10)
+#if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && (__IPHONE_OS_VERSION_MAX_ALLOWED < 80000)) || \
+    (defined(MAC_OS_X_VERSION_MAX_ALLOWED) && (MAC_OS_X_VERSION_MAX_ALLOWED < MAC_OS_X_VERSION_10_10))
+#define NSCalendarUnitYear NSYearCalendarUnit
+#define NSCalendarUnitMonth NSMonthCalendarUnit
+#define NSCalendarUnitDay NSDayCalendarUnit
+#define NSCalendarUnitWeekday NSWeekdayCalendarUnit
+#define NSCalendarIdentifierGregorian NSGregorianCalendar
+#endif
+
 #define RK_CALENDAR_UNIT_YEAR NSCalendarUnitYear
 #define RK_CALENDAR_UNIT_MONTH NSCalendarUnitMonth
 #define RK_CALENDAR_UNIT_DAY NSCalendarUnitDay
 #define RK_CALENDAR_UNIT_WEEKDAY NSCalendarUnitWeekday
 #define RK_CALENDAR_IDENTIFIER_GREGORIAN NSCalendarIdentifierGregorian
-#else
-#define RK_CALENDAR_UNIT_YEAR NSYearCalendarUnit
-#define RK_CALENDAR_UNIT_MONTH NSMonthCalendarUnit
-#define RK_CALENDAR_UNIT_DAY NSDayCalendarUnit
-#define RK_CALENDAR_UNIT_WEEKDAY NSWeekdayCalendarUnit
-#define RK_CALENDAR_IDENTIFIER_GREGORIAN NSGregorianCalendar
-#endif
 
 // Parsing Helpers
 static NSUInteger read_segment(const unsigned char *str, const unsigned char **next, NSUInteger *out_num_digits);
