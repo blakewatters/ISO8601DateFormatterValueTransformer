@@ -8,7 +8,7 @@ abstract_target 'Framework' do
   pod 'ISO8601DateFormatter', '~> 0.7'
 
   target 'ISO8601DateFormatterValueTransformer iOS' do
-    platform :ios, '5.1.1'
+    platform :ios, '6.0'
   end
 
   target 'ISO8601DateFormatterValueTransformer macOS' do
@@ -16,7 +16,7 @@ abstract_target 'Framework' do
   end
   
   target 'ISO8601DateFormatterValueTransformer iOS Tests' do
-      platform :ios, '5.1.1'
+      platform :ios, '6.0'
       test_pods
   end
   

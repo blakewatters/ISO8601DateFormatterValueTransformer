@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.dependency 'RKValueTransformers', '~> 1.1.0'
   s.dependency 'ISO8601DateFormatter', '~> 0.7'
 
-  s.ios.deployment_target = '5.1.1'
+  s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.7'
 end
