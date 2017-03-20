@@ -1,0 +1,2328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02AD942BBD7EE60E4FBE4030A71E6EE2 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1540B2BFC59E4525BE2D4C2C5F706A /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		034CC66453E6AE5B999952C229A3E032 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F97417068D6188E81CBE7C99A944DE /* XCTest.framework */; };
+		04377562DD2CB49DE64C2B9ABA239D95 /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E939754F6AAC693367D37CC917F36B /* EXPMatchers+beSubclassOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0587892740E3E0361405E7753E8FFA62 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 553968311410434B0EB765E3FE3E24C4 /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07A36C7D519DE893E56BD016BC0E3E6B /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 28406D977DCD511233E5E59DB84BAC32 /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A7C04954AB6E69A9F441E882C7C4C1C /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C090A5615A3530E64C51791EFA91E9B /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0B2A7E0E9B753A4CB6DB8ECE401F9244 /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCC570B692DB871668023C0B20ECB64 /* EXPMatchers+respondTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B53AC07B37A5F4300AF7280B3B4177E /* ISO8601DateFormatterValueTransformer-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFCB3DB52DB293718F7D7FC56CD1860 /* ISO8601DateFormatterValueTransformer-OSX-dummy.m */; };
+		0D37A8AAC9D3F74CD453DCE53C569572 /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4C0CF7F5607AEEEEE3B166D38FBCC1 /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		10038167B66DCE8007AE64FE5E07B028 /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A2045304FD3ACF2254F6278AD9F846E5 /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11094D9E85A860AEE74149F55A72B926 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1297D03E724959CC20B1D9E8A12A23 /* Cocoa.framework */; };
+		13988B8C2CC557588383BEC3A28C92FD /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4C0CF7F5607AEEEEE3B166D38FBCC1 /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18D0494B504FC870C71776096AF7EAB7 /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 266398DCACF6172382B5561398D834D1 /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1978D35A1E82E95DE70416172B0B4BE2 /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F58F19D97652F6DA8E24827886091A67 /* EXPUnsupportedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1998811C6E687484D48AC4CF574D5067 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6526F6EC61BC532F6C34FA3FE57B6E /* ISO8601DateFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1AB199B7D4D792296F882CD857F26DC6 /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = E1235A8904FBBCCB6C7029615343271D /* EXPMatchers+haveCountOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B43411C748211A852427B144343C32D /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F5405FFE13765F08A90FA41D2FEF52 /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1BDB1802A642F8598A3BBBBCA1A8E058 /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = B83C28B25D0E33B8688D12DA50ED0B68 /* ExpectaSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C0C325E139E4A5F19C54837E4578845 /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = B72EC1C7EA831E7F2E5448B522E8A5EA /* Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D717263A32ED07D431D0DDA05DC2626 /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EC1AA5CA197022AE3884244DDEFC44 /* EXPMatchers+beNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1D7B00B084E8241E70033E6140BF1DBB /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C3BDF46CA0CBB874509DC3F509594 /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		216FBD2513740DEBF6AC90B2F2F1525A /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A2045304FD3ACF2254F6278AD9F846E5 /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		231E32837B52A9EE75409E65600633F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E93DCE856A228AE0280B2DCD3EAB120 /* Foundation.framework */; };
+		23CF658D441743D972468CB65B3C97CD /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBB621EE7045B85BAD3C54B2C8E3DE0 /* EXPMatchers+beGreaterThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2568AE9B78890B00684222F77B269E59 /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 266398DCACF6172382B5561398D834D1 /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2577B4220B6FC8AC6CC5BD203D3673FC /* RKValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 7086A3A1A037B9E46317802DE7BEF5BB /* RKValueTransformers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		260EFB6B49D21DEB532F84988597DF3B /* Expecta-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3287D569FD3C160637381AADC0FDD8A5 /* Expecta-OSX-dummy.m */; };
+		286950D67A1FDDF07F15F2C2B05F768D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4430F4D9A65DAD86E75EE94F9BDA5ED1 /* XCTest.framework */; };
+		29C2BEDFFA7F28D3D0BA7E3C40A05AD2 /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A76B03DFC5552836D2F4D5B2453A09 /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B57FE7AD247863F5CD909C88D260D20 /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C4DF60E489AD8249BBB09BE2E0A97 /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2C56CC8A1501F12A8F5DCAF4D3BD89A5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1297D03E724959CC20B1D9E8A12A23 /* Cocoa.framework */; };
+		2D6DE3B1DB02A920FA953E0D4AFA7E5A /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 10D4F3967B01E1DDE6183F2A68D49FD6 /* EXPMatchers+beSupersetOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DA973F1699151988E16668976CBAE4F /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = A9047BA8316721549C0C8D4BA0BD4782 /* EXPMatchers+beLessThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F57B6C32C7B508026E96C80618EC580 /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = E1235A8904FBBCCB6C7029615343271D /* EXPMatchers+haveCountOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34CC45A4B7535949ECE9CC60DAE36982 /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = 72EDB3B6F0F9EED670B94CFE77CA9CE0 /* EXPMatchers+equal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34FABF2DCDB6F32EAD2A0F187418A193 /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5C74C1CF44F74CB72F965CB4C2AEFD /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		367476EFDFA2D3C705D3789CC2926731 /* EXPMatchers+respondTo.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE5145280996B8B2B2479DEB5D7F91E /* EXPMatchers+respondTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		368DB5130C30E66F6240972D730F4AD8 /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F13E14E55187C875FD383AF56E95A6 /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D92E5281419CB41D9E1473889AD2B84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BE8616BF5E63241281C8B06C6E7132 /* Foundation.framework */; };
+		3EB31B8102A7ECAAF434E1A246734AC4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1297D03E724959CC20B1D9E8A12A23 /* Cocoa.framework */; };
+		40708A883A23D8BD3F3283A03B061C2C /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = CBBB621EE7045B85BAD3C54B2C8E3DE0 /* EXPMatchers+beGreaterThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		42652BDEB33EA927D29A1FDFF1B820D0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1297D03E724959CC20B1D9E8A12A23 /* Cocoa.framework */; };
+		44A6BE106E4AC6E23DF959877D2204F0 /* ISO8601DateFormatterValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADDCA750745873762EFE1F99FB4705 /* ISO8601DateFormatterValueTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		455D5EEB7F57DA9226FBA882E6C832A9 /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2382426565C661AD3F7A70098E9081AE /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B2177F1AC872E961E300660CDB60769 /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0D1A953C2AA9B7800136BEE54974A4 /* EXPMatchers+beFalsy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BF2B3146197D8370AFB3FEDD3233427 /* ISO8601DateFormatterValueTransformer-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B45662BD9030DDEF2A66C2A48BEB96C3 /* ISO8601DateFormatterValueTransformer-iOS-dummy.m */; };
+		4C2ED1D6473E6580A1A872FC6B74E060 /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA1868CB455DE6207AB96795B4F83AB /* EXPBlockDefinedMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D959764C8AFEF7E9D0C86EE346E803F /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9988F2ABEA0FF903762BA39AE74DFBA2 /* EXPMatchers+postNotification.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4EC4B7A59BB12455A36B2F052586BFFB /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 014B095A94F8594C1D5E97285CF5B633 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-dummy.m */; };
+		50A139CBD2B5AB7BD75D77E2E96E6707 /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D8A0313401138D1007E8A1123409635 /* EXPMatchers+raiseWithReason.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52189FFAC578730FE4DA18E8DFE1E014 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1297D03E724959CC20B1D9E8A12A23 /* Cocoa.framework */; };
+		52F2E0E0C1B0CE9F93ABFA523E80200D /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B856D6433C64342E923D99AEB18B35 /* EXPMatchers+contain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52FF053A3754FA7FC432B0145415FD2F /* ExpectaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A628E5D84F6F67CEC872FD5D109F7147 /* ExpectaObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5316CD08B6B71B581FAFCEAC726200B6 /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C4DF60E489AD8249BBB09BE2E0A97 /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		53C98F9ED712A58899DD89AB96BB247B /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 48EF7B4B6E3385533D9C11DA070A7F5E /* EXPMatchers+beGreaterThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		557F29E9F80360F42FF9B559E5206E1A /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = E3C93ECB504ED2A1696C56004C84056E /* EXPFloatTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55FA8485F6192EB56C81D753837AB3BD /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 5308D40969AE260AF9BF747798877DCD /* EXPDoubleTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D8D7F57817FE231B4E0D82787167EB /* EXPMatchers+beInTheRangeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 025394D1184C988267CA36A3641ADCE2 /* EXPMatchers+beInTheRangeOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A7A8147C1E33C9CAD3F2CEBC04A73A1 /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFAC88AE760BAF11F5203C73E5E3EA1 /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5AFD1EAF331584DF492B60F0D7623DCE /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCC570B692DB871668023C0B20ECB64 /* EXPMatchers+respondTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C6F3A3B4A184630DF3D8875E4EE8466 /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CBB084A4B01AA14CA4F7AE5096590E6 /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D048F0E0F1473E64E40D6DB0D6CD207 /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = A9047BA8316721549C0C8D4BA0BD4782 /* EXPMatchers+beLessThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D561D6E364EE1821C3E335113BCABD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BE8616BF5E63241281C8B06C6E7132 /* Foundation.framework */; };
+		5D6867817B3BBA1BED604C15A08E40A0 /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C81F1CC4B299D6675EA40941D4F9C8 /* EXPMatchers+beGreaterThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E5ED8205E3F22A011CD0ED599F554D9 /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD93BA4615F521B57B096D63A19F9F1 /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F8100002349BCA5D761B789BEFD1D2D /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = DB0FD983C4F4C8D7A63A7A54F20FD25B /* EXPMatcherHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6038FEE15DC5619A1E0D6BA30513832E /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = C6077C99FB206479C9335816B078BFAE /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6494089C534B3D916DC3540022873140 /* ISO8601DateFormatter-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B840B20CB9E9E39CC72FEE4F11F423A /* ISO8601DateFormatter-OSX-dummy.m */; };
+		66458D58D30A1BB842E60A6C0DA48E02 /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A2C7E806512A063E5747C84C7395A4 /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		67F51DA3F29C9AF19F509B26C8C355B2 /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5C74C1CF44F74CB72F965CB4C2AEFD /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		680C8805F6304868D09BFE8BF158A9DA /* EXPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 386BB0CAD327C66F02B8797B721CA2D3 /* EXPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68E5F8554DB517DD8233596068FCF4D0 /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D8A0313401138D1007E8A1123409635 /* EXPMatchers+raiseWithReason.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690CD57BAC7A16F86021CCB1686A9FFD /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 10D4F3967B01E1DDE6183F2A68D49FD6 /* EXPMatchers+beSupersetOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69D63C7E1506ADB2F03F1881F0980996 /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = EC8737BDC5DE775C839AE0ED1AA41310 /* EXPMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BB8B145015AC85A3A47320A4B2C12E1 /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 27934E218434121EAA07952E28378C20 /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C34F3F396E2E608AF968BFDBC980855 /* RKValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 7086A3A1A037B9E46317802DE7BEF5BB /* RKValueTransformers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F30FCEFC9C8ADFBEA3679C6CABE0583 /* RKValueTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D16273FE2BEDC3D5CE7CE937A2F3C2 /* RKValueTransformers.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		73208214ACB48A4C109233DB8A5389CD /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EFD9855D032DC81F7A07AA169C451B /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		75674CD6DFB404410B97E3E042C46659 /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = 72EDB3B6F0F9EED670B94CFE77CA9CE0 /* EXPMatchers+equal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		770CE8CB4D95B9BC6A4730F1B625244C /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = DAFA7BE03F07631F827680F13CB21E4E /* EXPMatchers+raise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7969F09FADDD35D5AEF77AF7A7ACC5EE /* Expecta-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D2C0008739CD97168AAC379804E8DE /* Expecta-iOS-dummy.m */; };
+		7C92CC6867CFDC4FF0E4CFB8D540C87A /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 5308D40969AE260AF9BF747798877DCD /* EXPDoubleTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F69BFFC531FAA9AF43E565DA0472B56 /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 28406D977DCD511233E5E59DB84BAC32 /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83A3AB9AF454C3DF67A3289C22AF9C59 /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F14254A7B223C86E5C454405DD8D2C /* EXPBlockDefinedMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		84238BF6D13BF13C494D7B04E535C18A /* EXPMatchers+respondTo.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE5145280996B8B2B2479DEB5D7F91E /* EXPMatchers+respondTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8550D39ACA1D73FA5615E9FC375AC5B4 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = A9312C84BC5F591C1A5342E2C06BD842 /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		85EDD924742B8F6C97AF4813A65DF401 /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A773E17BC52FBD9E90B72C4E64E50D0 /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8621A06B96E74CA25CF7F9B3C9850AA9 /* EXPMatchers+beLessThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E85FF05389E73724C36CC01BE42789 /* EXPMatchers+beLessThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		873F059AE66B70E4778F0832E5725B6B /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DD359E769B37496E48F839BA386AD /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8760629720999C0E803838DACE5BFC50 /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = DB0FD983C4F4C8D7A63A7A54F20FD25B /* EXPMatcherHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ADF1E6012FB2BE20FD92404055B68BE /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9988F2ABEA0FF903762BA39AE74DFBA2 /* EXPMatchers+postNotification.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8B451C65EEB7D4E66A976E6283B28DAC /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 3980BEEE91FF836AEB2EF741D4D0460E /* EXPMatchers+postNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B58B5AE4A4B15CC26FF2B06A3B93E5B /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF017530518C2535BF8C0B9BDD3983A /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS-dummy.m */; };
+		8ED3D142FC43843A652F745A6DE0CC23 /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CCC62D0483CC801221F983EC76F4A4 /* EXPMatchers+beGreaterThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8F3010D699B7237B75FE9CA5C66B1301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BE8616BF5E63241281C8B06C6E7132 /* Foundation.framework */; };
+		8FEB51DA8974B508A2C2E826E5A82242 /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C81F1CC4B299D6675EA40941D4F9C8 /* EXPMatchers+beGreaterThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		937DFCA1D4708FC2C24CC81A4952D45D /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AC9431DBF01BAE351CEB94F8079B5E1 /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		940AB599081B21959C448AC8BA7572A8 /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EC1AA5CA197022AE3884244DDEFC44 /* EXPMatchers+beNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		94714F1EC5346BC053A888B374C02C83 /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD93BA4615F521B57B096D63A19F9F1 /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		96609120DB6036ED13A5994A6366A38F /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 27934E218434121EAA07952E28378C20 /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96A2D0B6D867028B3225161C2A64EF5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BE8616BF5E63241281C8B06C6E7132 /* Foundation.framework */; };
+		981AB853B7739101D8C7FC6652818413 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6526F6EC61BC532F6C34FA3FE57B6E /* ISO8601DateFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		99A4264D975E166CB69223BC6B85B006 /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = B83C28B25D0E33B8688D12DA50ED0B68 /* ExpectaSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BDE2528914D999A1086AAA94A0562BC /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A24A3C8D1C53B65493B4E8D18F1482 /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9C4E3C202A7CBFAD4B2F6AD83E252385 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = A9312C84BC5F591C1A5342E2C06BD842 /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9CD3DE4DF3BEC7C712B0FD6D43C2E624 /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE429F623246165274BAD02128FF9E3 /* EXPMatchers+beTruthy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D1B615F01EB0BC625583F2E9BF14C23 /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F5405FFE13765F08A90FA41D2FEF52 /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9DBFB748A9BAF389C69DF1C114FF4ED1 /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 8334E871A437D432C282EC696DF8B3F6 /* EXPMatchers+beInstanceOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E424F5F9CA596D82D46778ECDBEC02A /* EXPMatchers+beginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 91CE8A9C0CC45D9D92BA0875B0250D36 /* EXPMatchers+beginWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FAFFC2F7AE8ADA10B51DCB0DA0E7C3A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1297D03E724959CC20B1D9E8A12A23 /* Cocoa.framework */; };
+		9FD2D3B71C62C1297B56FE8673BA2335 /* EXPMatchers+beginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 91CE8A9C0CC45D9D92BA0875B0250D36 /* EXPMatchers+beginWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2246FBA637669E65F38E2D8FB9D08EB /* ISO8601DateFormatterValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DFC01BD1FA8A8F12B3A3206084D8140 /* ISO8601DateFormatterValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2D96D8BFD986C449BE474B9A5D7DBF8 /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE429F623246165274BAD02128FF9E3 /* EXPMatchers+beTruthy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4232C6E330861DFCEF23C7BC062B0EA /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0D1A953C2AA9B7800136BEE54974A4 /* EXPMatchers+beFalsy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4B6FCC948ABF279CF1201A700FF7C90 /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBA3F48A81B86124C735EDB388DB5B /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A6AD5F6C444A1D9016AC1EEA7ADD63B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BE8616BF5E63241281C8B06C6E7132 /* Foundation.framework */; };
+		A917856342CF313FB0A7AF3220E02BF3 /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F58F19D97652F6DA8E24827886091A67 /* EXPUnsupportedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD3744EA57C9C14503D51119030E7610 /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = C7843C0836AC122902D3ED6760F9AEBB /* ISO8601DateFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B00E40ED4A94ECD4746359F3A5287B17 /* RKValueTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D16273FE2BEDC3D5CE7CE937A2F3C2 /* RKValueTransformers.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B22E0759C5B489B8F600E76BA030694C /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = C6077C99FB206479C9335816B078BFAE /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B4F7662A7E114B4953F3A24A263CE7C3 /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CBB084A4B01AA14CA4F7AE5096590E6 /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7405C51EB8A207D4C04646C01F35A8B /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F83CF005DCDCDD7E69409F6FC3F6346 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS-dummy.m */; };
+		B813D80DA13270D7091288A7AD8909E2 /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E939754F6AAC693367D37CC917F36B /* EXPMatchers+beSubclassOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B85FD2C2B79B5A8C4BE1E80DD3756682 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BE8616BF5E63241281C8B06C6E7132 /* Foundation.framework */; };
+		B8662514A136FD8DE57382C6885EAEAA /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 3980BEEE91FF836AEB2EF741D4D0460E /* EXPMatchers+postNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B96259473306C80F2FC1A60467CC3F45 /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2701C1A2E3971529D6354110797BEC /* EXPMatchers+beginWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B973E5C43FCF32D4C7F249BFFFBF28B0 /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFAC88AE760BAF11F5203C73E5E3EA1 /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BCB953F14E05C3D034A2E6F749994490 /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 273761461275F4A20652CFB89438148E /* EXPMatchers+beIdenticalTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCDD9845064B0373B0E20939F909422C /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE227957C4AA00049437B777956CF41A /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BDF1D2B624EA4AA247D1E15FCF151454 /* ExpectaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A628E5D84F6F67CEC872FD5D109F7147 /* ExpectaObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE5C0EE255B3AA6E23A666715E37B789 /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = 200F01723B4757790C20812631FDD8F8 /* EXPExpect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF33751DC33F3772610BE9E7D6EF3D55 /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 8334E871A437D432C282EC696DF8B3F6 /* EXPMatchers+beInstanceOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C48A35ED75BC02394A734BEBB009F360 /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AC9431DBF01BAE351CEB94F8079B5E1 /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C55B488D206BB369FE0A9F0B96CC23F5 /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2975A3AC9E39ED20FAF3739BED61A10 /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C6AC9A898C125E316E5A5466CC2FEE7B /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = C71D97E5B5F2104841E41A01C85A566F /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C7C88192B731A7561A0B3553414EB003 /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = E3C93ECB504ED2A1696C56004C84056E /* EXPFloatTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C84F143737CC55C40250DD82EFB428BC /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A24A3C8D1C53B65493B4E8D18F1482 /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CA3382D2CAC0DE5C1EA690F7F5672C30 /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A773E17BC52FBD9E90B72C4E64E50D0 /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CA9657366D374534C65090CD24C59108 /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2701C1A2E3971529D6354110797BEC /* EXPMatchers+beginWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CBB9BF9DE4DCB6C686A9B21FF8A971A0 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 553968311410434B0EB765E3FE3E24C4 /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CCACDF3384559650069D19A58048A00F /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = A53FC61E9BF3BF15E715E4F1B9D1A58F /* EXPMatchers+equal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE535783A570B4E7F6C7217C14401D79 /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 48EF7B4B6E3385533D9C11DA070A7F5E /* EXPMatchers+beGreaterThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE7187C7157277599E9861A40D3DB1AE /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F14254A7B223C86E5C454405DD8D2C /* EXPBlockDefinedMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CEE250BB756C1DDB32BC72B82BE1B0CC /* EXPMatchers+beLessThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E85FF05389E73724C36CC01BE42789 /* EXPMatchers+beLessThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF71A834ACBB02736C9B3A57A76D8592 /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE227957C4AA00049437B777956CF41A /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D029C16FA1BCD2776BD761C93972C29E /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = C7843C0836AC122902D3ED6760F9AEBB /* ISO8601DateFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2CA811B74D480A5C7DD44D03BD29F3D /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 02039FEBA43EDBFA22345C1D9E0D73F8 /* EXPMatchers+beNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3AD38B864DBABBEE4616CD87B3B4738 /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EFD9855D032DC81F7A07AA169C451B /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D44A7684630215F9A7650A3496CAE2FF /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = EC8737BDC5DE775C839AE0ED1AA41310 /* EXPMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5056822E2375C03774CE42A026B809A /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = BC5966471076CBFC7E862D9211B4DBAB /* EXPMatchers+endWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D559607A642FF82406927D028A11A781 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA02A532A306263941ECCED8802348F4 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-dummy.m */; };
+		D5C8F542176EB8FBF6FD7D8A9E4F939A /* RKValueTransformers-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DC21BBDE216DC04D589263BD302FE7 /* RKValueTransformers-OSX-dummy.m */; };
+		D8EAF244BA124C6AFB4CFFE229AC7926 /* EXPMatchers+beInTheRangeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 025394D1184C988267CA36A3641ADCE2 /* EXPMatchers+beInTheRangeOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9E651B49F98F3C77F033D74A8027F42 /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = 200F01723B4757790C20812631FDD8F8 /* EXPExpect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA37B1607E1B2F6D04294F4E78D9EB03 /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CCC62D0483CC801221F983EC76F4A4 /* EXPMatchers+beGreaterThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DA6524BDDF67430E02AE48ADC3E08E8D /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DD359E769B37496E48F839BA386AD /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DC68E1BE83C024AE33DC5A9374CA38BA /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 97462611374C2BC36E9346809902A0E9 /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DCBD3B324B30ACF9697775533E0C3FB1 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1540B2BFC59E4525BE2D4C2C5F706A /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DD11D6D9992E3168933DF0EB14B55240 /* ISO8601DateFormatterValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DFC01BD1FA8A8F12B3A3206084D8140 /* ISO8601DateFormatterValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E30DFF8CBC7878D0576A9B2D2DAB6E26 /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBA3F48A81B86124C735EDB388DB5B /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E3E1B9F18FD04234FCC37BFCACCC310F /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C3BDF46CA0CBB874509DC3F509594 /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E3F5DEAB41686084C5EA11452E612066 /* RKValueTransformers-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C86C3C976EE2E3E4DC203AE81BC41F6 /* RKValueTransformers-iOS-dummy.m */; };
+		E4C20E65E90A84E344E97C9996EC8F2D /* ISO8601DateFormatter-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC9E71EB5D2E7D1FBEEA9310F6AFF8F /* ISO8601DateFormatter-iOS-dummy.m */; };
+		E4F8DDAB4B5FCE455AB8FC2C0A68B630 /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C090A5615A3530E64C51791EFA91E9B /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E8421B08A9181CF7B66F7B151E3B2A40 /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2382426565C661AD3F7A70098E9081AE /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E9123C668D1B4D5775012DA6EEAEB84C /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 273761461275F4A20652CFB89438148E /* EXPMatchers+beIdenticalTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBA6D22387A94B2442E349E6C41C3761 /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 97462611374C2BC36E9346809902A0E9 /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ED395C2BD183096EED26F74865E847A5 /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = C71D97E5B5F2104841E41A01C85A566F /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ED5A5D00C69AC3E4720A03D0EAF1F89C /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A76B03DFC5552836D2F4D5B2453A09 /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED6962C11723F0FA38255558F58921B9 /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = B72EC1C7EA831E7F2E5448B522E8A5EA /* Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F07BEF2B7C2F3847F8B6A982B9EA1A35 /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F13E14E55187C875FD383AF56E95A6 /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2BA91CDC280718EB0F6933EC41051A0 /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 02039FEBA43EDBFA22345C1D9E0D73F8 /* EXPMatchers+beNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4FF341467EFD0E961FF67741FB00706 /* EXPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 386BB0CAD327C66F02B8797B721CA2D3 /* EXPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5E944D9AF3F1EA7B5D41E2BF6DECC2B /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = A53FC61E9BF3BF15E715E4F1B9D1A58F /* EXPMatchers+equal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F682ADB42A93EE0C74F7048CB0EDD7B0 /* ISO8601DateFormatterValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFADDCA750745873762EFE1F99FB4705 /* ISO8601DateFormatterValueTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F963E6882F5E644445FA02E958D46597 /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = DAFA7BE03F07631F827680F13CB21E4E /* EXPMatchers+raise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA32636A1D2BEF75C8FB0C194B8A224C /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A2C7E806512A063E5747C84C7395A4 /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FACC83FEC1B73E2B890A21E8F212311D /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2975A3AC9E39ED20FAF3739BED61A10 /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FBA3DC8892D33D39FC3293045D3382BB /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B856D6433C64342E923D99AEB18B35 /* EXPMatchers+contain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCE4176D2DE01C34BDEDC550FFED33AA /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA1868CB455DE6207AB96795B4F83AB /* EXPBlockDefinedMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFA26E33FBCCB4E4DCC0E34875A65649 /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = BC5966471076CBFC7E862D9211B4DBAB /* EXPMatchers+endWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02BE9373795F79BC24C429A746DFFD6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26E433DD20A2461B022C0AE9E55F1398;
+			remoteInfo = "ISO8601DateFormatterValueTransformer-OSX";
+		};
+		325C60FAA99176792F2EBF3C505C56E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 605DBF1C91154E5EE7624965180A02E0;
+			remoteInfo = "ISO8601DateFormatter-OSX";
+		};
+		32FA2D6CB72FC4C08F6EEB553AB81E38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F5299F6992B1CE2228AF1065CDF0F1C;
+			remoteInfo = "RKValueTransformers-iOS";
+		};
+		44BF53FA55DCF5C671489C228A88EC91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5146B7AB0F5CF1F95A5AE83325166B6F;
+			remoteInfo = "ISO8601DateFormatterValueTransformer-iOS";
+		};
+		45E872FB5F6BAD5DD5722EF70F1B837C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2020E10A3C090B4BBD1F33C0BB08A2;
+			remoteInfo = "RKValueTransformers-OSX";
+		};
+		46A2FE0C2E3BA9B8E80990EA51C1B9E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2020E10A3C090B4BBD1F33C0BB08A2;
+			remoteInfo = "RKValueTransformers-OSX";
+		};
+		51CBC53A357A97CC6A76087E4FA82D52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39126B9D4D70556C7D59464370043C52;
+			remoteInfo = "ISO8601DateFormatter-iOS";
+		};
+		5E794C6E22B830D79F6D841F9B8ECC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F5299F6992B1CE2228AF1065CDF0F1C;
+			remoteInfo = "RKValueTransformers-iOS";
+		};
+		81C7E6CCA94DD14528BBA032E07CF926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 605DBF1C91154E5EE7624965180A02E0;
+			remoteInfo = "ISO8601DateFormatter-OSX";
+		};
+		848162DCD66529769B17829EAC6F54E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39126B9D4D70556C7D59464370043C52;
+			remoteInfo = "ISO8601DateFormatter-iOS";
+		};
+		89A73F34AD1C413010F605B95B82E91E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 605DBF1C91154E5EE7624965180A02E0;
+			remoteInfo = "ISO8601DateFormatter-OSX";
+		};
+		9C5619C12BE82557BD94E4DEFD71711B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DA1968400C08E2853CEC1363887F04D;
+			remoteInfo = "Expecta-iOS";
+		};
+		C0A728A6E4E352C691CD538F358147C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F39FBBB83889ABE96EEC4FC42FA736C;
+			remoteInfo = "Expecta-OSX";
+		};
+		C7502FA36A4841E2C62EE6F1FDE1669D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2020E10A3C090B4BBD1F33C0BB08A2;
+			remoteInfo = "RKValueTransformers-OSX";
+		};
+		E478DD3EB47C1F38C364301ED7E88193 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F5299F6992B1CE2228AF1065CDF0F1C;
+			remoteInfo = "RKValueTransformers-iOS";
+		};
+		F1C5BE3ADAF6DA111AE7A3A3D161A6FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39126B9D4D70556C7D59464370043C52;
+			remoteInfo = "ISO8601DateFormatter-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		014B095A94F8594C1D5E97285CF5B633 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-dummy.m"; sourceTree = "<group>"; };
+		02039FEBA43EDBFA22345C1D9E0D73F8 /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
+		025394D1184C988267CA36A3641ADCE2 /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
+		05DD08B71C164E44B937F37448B1112F /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-resources.sh"; sourceTree = "<group>"; };
+		08E939754F6AAC693367D37CC917F36B /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
+		0B8C3BDF46CA0CBB874509DC3F509594 /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
+		10D4F3967B01E1DDE6183F2A68D49FD6 /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
+		19A76B03DFC5552836D2F4D5B2453A09 /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "Expecta/Matchers/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
+		1A1297D03E724959CC20B1D9E8A12A23 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		1A477048BF20412719712F9E716AA733 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1B5C74C1CF44F74CB72F965CB4C2AEFD /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
+		1B840B20CB9E9E39CC72FEE4F11F423A /* ISO8601DateFormatter-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ISO8601DateFormatter-OSX-dummy.m"; sourceTree = "<group>"; };
+		1C090A5615A3530E64C51791EFA91E9B /* EXPDoubleTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPDoubleTuple.m; path = Expecta/EXPDoubleTuple.m; sourceTree = "<group>"; };
+		1F83CF005DCDCDD7E69409F6FC3F6346 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS-dummy.m"; sourceTree = "<group>"; };
+		200F01723B4757790C20812631FDD8F8 /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
+		2382426565C661AD3F7A70098E9081AE /* ExpectaSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaSupport.m; path = Expecta/ExpectaSupport.m; sourceTree = "<group>"; };
+		2630D0FBE5596B226890ADCD5FA46A1C /* RKValueTransformers-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RKValueTransformers-iOS-prefix.pch"; path = "../RKValueTransformers-iOS/RKValueTransformers-iOS-prefix.pch"; sourceTree = "<group>"; };
+		266398DCACF6172382B5561398D834D1 /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
+		273761461275F4A20652CFB89438148E /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		27934E218434121EAA07952E28378C20 /* NSObject+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "Expecta/NSObject+Expecta.h"; sourceTree = "<group>"; };
+		27D6BC5F6818A72FBF88A5B8174F621F /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		28406D977DCD511233E5E59DB84BAC32 /* NSValue+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "Expecta/NSValue+Expecta.h"; sourceTree = "<group>"; };
+		2C309FCDADF07B76DD9DF2E4DF8AB0C4 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS.release.xcconfig"; sourceTree = "<group>"; };
+		2C8A0FC852BD480DC56E3C5E8A1B72F1 /* ISO8601DateFormatter-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISO8601DateFormatter-OSX-prefix.pch"; sourceTree = "<group>"; };
+		2CBB084A4B01AA14CA4F7AE5096590E6 /* EXPMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcher.h; path = Expecta/EXPMatcher.h; sourceTree = "<group>"; };
+		3110F116BBBCFA5A954BFB1040135E94 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3287D569FD3C160637381AADC0FDD8A5 /* Expecta-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Expecta-OSX-dummy.m"; sourceTree = "<group>"; };
+		34C3DDF878FBF1C2CFEDED5770C113BD /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3544889E8FDB060E0D0A60ADDF2B9C58 /* Expecta-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Expecta-OSX-prefix.pch"; sourceTree = "<group>"; };
+		358232A1C6D07C16484410D3A90B92C7 /* ISO8601DateFormatter-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ISO8601DateFormatter-iOS-prefix.pch"; path = "../ISO8601DateFormatter-iOS/ISO8601DateFormatter-iOS-prefix.pch"; sourceTree = "<group>"; };
+		37F14254A7B223C86E5C454405DD8D2C /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = Expecta/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
+		386BB0CAD327C66F02B8797B721CA2D3 /* EXPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDefines.h; path = Expecta/EXPDefines.h; sourceTree = "<group>"; };
+		3980BEEE91FF836AEB2EF741D4D0460E /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
+		3B6526F6EC61BC532F6C34FA3FE57B6E /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
+		3CCC570B692DB871668023C0B20ECB64 /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+respondTo.h"; path = "Expecta/Matchers/EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
+		3D8A0313401138D1007E8A1123409635 /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
+		3DF9936FCA73A7A4E9DEABB6EDF062A2 /* Expecta-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Expecta-OSX.xcconfig"; sourceTree = "<group>"; };
+		3FDBA3F48A81B86124C735EDB388DB5B /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
+		41BE8616BF5E63241281C8B06C6E7132 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4430F4D9A65DAD86E75EE94F9BDA5ED1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		45A24A3C8D1C53B65493B4E8D18F1482 /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
+		45D7109B4DE76127203AC153F733D79C /* ISO8601DateFormatterValueTransformer-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ISO8601DateFormatterValueTransformer-iOS.xcconfig"; path = "../ISO8601DateFormatterValueTransformer-iOS/ISO8601DateFormatterValueTransformer-iOS.xcconfig"; sourceTree = "<group>"; };
+		475B2A15484DFEF3650C35EE5AFCBFF2 /* RKValueTransformers-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RKValueTransformers-OSX.xcconfig"; sourceTree = "<group>"; };
+		48EF7B4B6E3385533D9C11DA070A7F5E /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		4C86C3C976EE2E3E4DC203AE81BC41F6 /* RKValueTransformers-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RKValueTransformers-iOS-dummy.m"; path = "../RKValueTransformers-iOS/RKValueTransformers-iOS-dummy.m"; sourceTree = "<group>"; };
+		4E47E9D45B09D550F4E2FA5AB3E3BF41 /* libExpecta-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libExpecta-iOS.a"; path = "libExpecta-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E93DCE856A228AE0280B2DCD3EAB120 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5013F8D3620E5817E7AB0D257EE23B51 /* ISO8601DateFormatter-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ISO8601DateFormatter-OSX.xcconfig"; sourceTree = "<group>"; };
+		5308D40969AE260AF9BF747798877DCD /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
+		538C4DF60E489AD8249BBB09BE2E0A97 /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
+		54CFF376E5C919AB17B7D19C3B2C67B4 /* Expecta-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Expecta-iOS-prefix.pch"; path = "../Expecta-iOS/Expecta-iOS-prefix.pch"; sourceTree = "<group>"; };
+		553968311410434B0EB765E3FE3E24C4 /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
+		5DC9E71EB5D2E7D1FBEEA9310F6AFF8F /* ISO8601DateFormatter-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ISO8601DateFormatter-iOS-dummy.m"; path = "../ISO8601DateFormatter-iOS/ISO8601DateFormatter-iOS-dummy.m"; sourceTree = "<group>"; };
+		62DC21BBDE216DC04D589263BD302FE7 /* RKValueTransformers-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RKValueTransformers-OSX-dummy.m"; sourceTree = "<group>"; };
+		68F5405FFE13765F08A90FA41D2FEF52 /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
+		6A773E17BC52FBD9E90B72C4E64E50D0 /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
+		6AC9431DBF01BAE351CEB94F8079B5E1 /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		6B78D4C9A646952DFE85504F1F656A38 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D128C92752A0394A5DB4EA4F17F30FA /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E6EABA5082FA2CF1AC2451B4BB2B6B7 /* ISO8601DateFormatterValueTransformer-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ISO8601DateFormatterValueTransformer-iOS-prefix.pch"; path = "../ISO8601DateFormatterValueTransformer-iOS/ISO8601DateFormatterValueTransformer-iOS-prefix.pch"; sourceTree = "<group>"; };
+		6EE429F623246165274BAD02128FF9E3 /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "Expecta/Matchers/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
+		6EFAC88AE760BAF11F5203C73E5E3EA1 /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
+		70122B6252A85D13C5B04C3F016A243D /* libRKValueTransformers-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libRKValueTransformers-OSX.a"; path = "libRKValueTransformers-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7086A3A1A037B9E46317802DE7BEF5BB /* RKValueTransformers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKValueTransformers.h; path = Code/RKValueTransformers.h; sourceTree = "<group>"; };
+		72EDB3B6F0F9EED670B94CFE77CA9CE0 /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "Expecta/Matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
+		740DD359E769B37496E48F839BA386AD /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
+		74EABA1B61D308D7867A29E5C08F2FF0 /* libRKValueTransformers-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libRKValueTransformers-iOS.a"; path = "libRKValueTransformers-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A56D22CC4B576A4372B75839926590 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		79B856D6433C64342E923D99AEB18B35 /* EXPMatchers+contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "Expecta/Matchers/EXPMatchers+contain.h"; sourceTree = "<group>"; };
+		7AA787AF389C303325EC4F50EBF72DE4 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7C92868BC2562CD28031938C230DD418 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7CA4B131DFFF052BCC9034D8BAF958BE /* Expecta-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Expecta-iOS.xcconfig"; path = "../Expecta-iOS/Expecta-iOS.xcconfig"; sourceTree = "<group>"; };
+		7D693AF0F90A3A80F75A8267132601B0 /* libPods-Framework-ISO8601DateFormatterValueTransformer macOS Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Framework-ISO8601DateFormatterValueTransformer macOS Tests.a"; path = "libPods-Framework-ISO8601DateFormatterValueTransformer macOS Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DFC01BD1FA8A8F12B3A3206084D8140 /* ISO8601DateFormatterValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatterValueTransformer.h; sourceTree = "<group>"; };
+		80F13E14E55187C875FD383AF56E95A6 /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beKindOf.h"; path = "Expecta/Matchers/EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
+		81EFD9855D032DC81F7A07AA169C451B /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
+		8334E871A437D432C282EC696DF8B3F6 /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		836362019C1D9A56518957AECF2E606C /* libISO8601DateFormatterValueTransformer-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libISO8601DateFormatterValueTransformer-OSX.a"; path = "libISO8601DateFormatterValueTransformer-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1540B2BFC59E4525BE2D4C2C5F706A /* EXPMatchers+raise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raise.m"; path = "Expecta/Matchers/EXPMatchers+raise.m"; sourceTree = "<group>"; };
+		8AA1868CB455DE6207AB96795B4F83AB /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
+		8D9ACE3D949E951C994586CBD12051FA /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-resources.sh"; sourceTree = "<group>"; };
+		91CE8A9C0CC45D9D92BA0875B0250D36 /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beginWith.h"; path = "Expecta/Matchers/EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93F97417068D6188E81CBE7C99A944DE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		97462611374C2BC36E9346809902A0E9 /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThan.m"; path = "Expecta/Matchers/EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
+		97C81F1CC4B299D6675EA40941D4F9C8 /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
+		9988F2ABEA0FF903762BA39AE74DFBA2 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
+		9AF017530518C2535BF8C0B9BDD3983A /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS-dummy.m"; sourceTree = "<group>"; };
+		9CFCB3DB52DB293718F7D7FC56CD1860 /* ISO8601DateFormatterValueTransformer-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ISO8601DateFormatterValueTransformer-OSX-dummy.m"; sourceTree = "<group>"; };
+		9D94B8A02B4B31213A3D8AFD9AE36F2C /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2045304FD3ACF2254F6278AD9F846E5 /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
+		A2D4F8B7952F16415DCD304408C97D37 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		A32152D8FDE9AB3160864A6E175B17D4 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS-resources.sh"; sourceTree = "<group>"; };
+		A53FC61E9BF3BF15E715E4F1B9D1A58F /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
+		A628E5D84F6F67CEC872FD5D109F7147 /* ExpectaObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaObject.h; path = Expecta/ExpectaObject.h; sourceTree = "<group>"; };
+		A70AE9D1B80EB49E6774E4DFF25E6133 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A7113AAA432F9FED3AA056C963310E8D /* ISO8601DateFormatter-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ISO8601DateFormatter-iOS.xcconfig"; path = "../ISO8601DateFormatter-iOS/ISO8601DateFormatter-iOS.xcconfig"; sourceTree = "<group>"; };
+		A79F3B184574F11D0F28FEFCF5854E72 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A9047BA8316721549C0C8D4BA0BD4782 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		A9312C84BC5F591C1A5342E2C06BD842 /* EXPFloatTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPFloatTuple.m; path = Expecta/EXPFloatTuple.m; sourceTree = "<group>"; };
+		AAE5145280996B8B2B2479DEB5D7F91E /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
+		AC0289766E196002208B259A85983D21 /* RKValueTransformers-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RKValueTransformers-OSX-prefix.pch"; sourceTree = "<group>"; };
+		AC2701C1A2E3971529D6354110797BEC /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
+		B1D103EE23B9EEE00520B4B69707647E /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS.release.xcconfig"; sourceTree = "<group>"; };
+		B2EC1AA5CA197022AE3884244DDEFC44 /* EXPMatchers+beNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beNil.m"; path = "Expecta/Matchers/EXPMatchers+beNil.m"; sourceTree = "<group>"; };
+		B45662BD9030DDEF2A66C2A48BEB96C3 /* ISO8601DateFormatterValueTransformer-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ISO8601DateFormatterValueTransformer-iOS-dummy.m"; path = "../ISO8601DateFormatterValueTransformer-iOS/ISO8601DateFormatterValueTransformer-iOS-dummy.m"; sourceTree = "<group>"; };
+		B698DC79745D45E777A459BED465B531 /* libPods-Framework-ISO8601DateFormatterValueTransformer iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Framework-ISO8601DateFormatterValueTransformer iOS.a"; path = "libPods-Framework-ISO8601DateFormatterValueTransformer iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B72EC1C7EA831E7F2E5448B522E8A5EA /* Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = Expecta/Expecta.h; sourceTree = "<group>"; };
+		B7D16273FE2BEDC3D5CE7CE937A2F3C2 /* RKValueTransformers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKValueTransformers.m; path = Code/RKValueTransformers.m; sourceTree = "<group>"; };
+		B83C28B25D0E33B8688D12DA50ED0B68 /* ExpectaSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = Expecta/ExpectaSupport.h; sourceTree = "<group>"; };
+		BC5966471076CBFC7E862D9211B4DBAB /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+endWith.h"; path = "Expecta/Matchers/EXPMatchers+endWith.h"; sourceTree = "<group>"; };
+		BFADDCA750745873762EFE1F99FB4705 /* ISO8601DateFormatterValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatterValueTransformer.m; sourceTree = "<group>"; };
+		C1E1A626400C2356D47CDED363656F17 /* libISO8601DateFormatterValueTransformer-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libISO8601DateFormatterValueTransformer-iOS.a"; path = "libISO8601DateFormatterValueTransformer-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A2C7E806512A063E5747C84C7395A4 /* EXPMatchers+contain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+contain.m"; path = "Expecta/Matchers/EXPMatchers+contain.m"; sourceTree = "<group>"; };
+		C6077C99FB206479C9335816B078BFAE /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSupersetOf.m"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
+		C71D97E5B5F2104841E41A01C85A566F /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
+		C7843C0836AC122902D3ED6760F9AEBB /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		CA02A532A306263941ECCED8802348F4 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-dummy.m"; sourceTree = "<group>"; };
+		CBBB621EE7045B85BAD3C54B2C8E3DE0 /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
+		CD549C7B54622F5B8C1AC90C9D3508B7 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-frameworks.sh"; sourceTree = "<group>"; };
+		CE227957C4AA00049437B777956CF41A /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
+		D2975A3AC9E39ED20FAF3739BED61A10 /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
+		DAFA7BE03F07631F827680F13CB21E4E /* EXPMatchers+raise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "Expecta/Matchers/EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		DB0FD983C4F4C8D7A63A7A54F20FD25B /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcherHelpers.h; path = Expecta/Matchers/EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		DBCC26209111967A36E85106703B21BE /* libPods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.a"; path = "libPods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1235A8904FBBCCB6C7029615343271D /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		E30E77917B2A6AF4017B5B156648F461 /* libExpecta-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libExpecta-OSX.a"; path = "libExpecta-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C93ECB504ED2A1696C56004C84056E /* EXPFloatTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = Expecta/EXPFloatTuple.h; sourceTree = "<group>"; };
+		E4ECDF5ACEB3DF4DC07A801689DA9C64 /* libISO8601DateFormatter-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libISO8601DateFormatter-iOS.a"; path = "libISO8601DateFormatter-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9CCC62D0483CC801221F983EC76F4A4 /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
+		EA1CDCACE2C602636A963A2CD1E71174 /* libISO8601DateFormatter-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libISO8601DateFormatter-OSX.a"; path = "libISO8601DateFormatter-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3B62759F3D7E9B792E55F106F0348C /* RKValueTransformers-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "RKValueTransformers-iOS.xcconfig"; path = "../RKValueTransformers-iOS/RKValueTransformers-iOS.xcconfig"; sourceTree = "<group>"; };
+		EABFB025CB58EAAFAA7F75D929FF4B00 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EC0D1A953C2AA9B7800136BEE54974A4 /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		EC8737BDC5DE775C839AE0ED1AA41310 /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
+		EEE5EC3BAE00575794699FC9A73B60ED /* ISO8601DateFormatterValueTransformer-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ISO8601DateFormatterValueTransformer-OSX.xcconfig"; sourceTree = "<group>"; };
+		F00A278FDFBC50D3B1405606C580E52E /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS-resources.sh"; sourceTree = "<group>"; };
+		F298FD569EAAAF9A11E922DC0B8EF656 /* ISO8601DateFormatterValueTransformer-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISO8601DateFormatterValueTransformer-OSX-prefix.pch"; sourceTree = "<group>"; };
+		F58F19D97652F6DA8E24827886091A67 /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPUnsupportedObject.h; path = Expecta/EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		F6D2C0008739CD97168AAC379804E8DE /* Expecta-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Expecta-iOS-dummy.m"; path = "../Expecta-iOS/Expecta-iOS-dummy.m"; sourceTree = "<group>"; };
+		F6EC87AD1C828A392A50313F861D1DDB /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F7E85FF05389E73724C36CC01BE42789 /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		FA4C0CF7F5607AEEEEE3B166D38FBCC1 /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beCloseTo.m"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
+		FBD93BA4615F521B57B096D63A19F9F1 /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raiseWithReason.m"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
+		FC39EDB4A50BDC4E0E1BB61F8C70EBD7 /* libPods-Framework-ISO8601DateFormatterValueTransformer macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Framework-ISO8601DateFormatterValueTransformer macOS.a"; path = "libPods-Framework-ISO8601DateFormatterValueTransformer macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08E5873946C11E319728C942FF9B5E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3010D699B7237B75FE9CA5C66B1301 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0999D7BCA215943280E7156E4C0F7BB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D92E5281419CB41D9E1473889AD2B84 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FB7E5A2F81465EF26DD24302719D24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A2D0B6D867028B3225161C2A64EF5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C3B6D7EEA8431FDD1208511B075CAC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D561D6E364EE1821C3E335113BCABD4 /* Foundation.framework in Frameworks */,
+				034CC66453E6AE5B999952C229A3E032 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6709BED66E14E87B98453D8EC350E407 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11094D9E85A860AEE74149F55A72B926 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D8EF5661CB0C19EA985737A701B0DC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C56CC8A1501F12A8F5DCAF4D3BD89A5 /* Cocoa.framework in Frameworks */,
+				231E32837B52A9EE75409E65600633F4 /* Foundation.framework in Frameworks */,
+				286950D67A1FDDF07F15F2C2B05F768D /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A53A0E866EBA64AE1A53202E6EC019E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85FD2C2B79B5A8C4BE1E80DD3756682 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1FBE0B6A62DC84EF2257D2F05FE0399 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52189FFAC578730FE4DA18E8DFE1E014 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C93F55E1BCEC70213DD22447D1EDFE10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB31B8102A7ECAAF434E1A246734AC4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAAA04D2CF1B1A550D925FB8C35FA0B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42652BDEB33EA927D29A1FDFF1B820D0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE8207B6BA40AF4C7192B3552171FB85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FAFFC2F7AE8ADA10B51DCB0DA0E7C3A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3EBC95950A54A183893D4D5284DBCC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6AD5F6C444A1D9016AC1EEA7ADD63B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C837AC96027F6699994A2B4284F129 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CA4B131DFFF052BCC9034D8BAF958BE /* Expecta-iOS.xcconfig */,
+				F6D2C0008739CD97168AAC379804E8DE /* Expecta-iOS-dummy.m */,
+				54CFF376E5C919AB17B7D19C3B2C67B4 /* Expecta-iOS-prefix.pch */,
+				3DF9936FCA73A7A4E9DEABB6EDF062A2 /* Expecta-OSX.xcconfig */,
+				3287D569FD3C160637381AADC0FDD8A5 /* Expecta-OSX-dummy.m */,
+				3544889E8FDB060E0D0A60ADDF2B9C58 /* Expecta-OSX-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Expecta-OSX";
+			sourceTree = "<group>";
+		};
+		0A56B91D6FF243A39DBB20F5A2B07FB6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3E7A091EB63FCB27EEFE6FFCE6636EB /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS */,
+				97A620EC4D1AD151EF432B2C0CB8A508 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests */,
+				929851E7A0D4BAEEC70962FAAC639941 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS */,
+				8DB17286236B7EE62305AEFADB40F603 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		112765961F3E3AC14AF3FBF449ABA5BA /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				8AA1868CB455DE6207AB96795B4F83AB /* EXPBlockDefinedMatcher.h */,
+				37F14254A7B223C86E5C454405DD8D2C /* EXPBlockDefinedMatcher.m */,
+				386BB0CAD327C66F02B8797B721CA2D3 /* EXPDefines.h */,
+				5308D40969AE260AF9BF747798877DCD /* EXPDoubleTuple.h */,
+				1C090A5615A3530E64C51791EFA91E9B /* EXPDoubleTuple.m */,
+				B72EC1C7EA831E7F2E5448B522E8A5EA /* Expecta.h */,
+				A628E5D84F6F67CEC872FD5D109F7147 /* ExpectaObject.h */,
+				CE227957C4AA00049437B777956CF41A /* ExpectaObject.m */,
+				B83C28B25D0E33B8688D12DA50ED0B68 /* ExpectaSupport.h */,
+				2382426565C661AD3F7A70098E9081AE /* ExpectaSupport.m */,
+				200F01723B4757790C20812631FDD8F8 /* EXPExpect.h */,
+				81EFD9855D032DC81F7A07AA169C451B /* EXPExpect.m */,
+				E3C93ECB504ED2A1696C56004C84056E /* EXPFloatTuple.h */,
+				A9312C84BC5F591C1A5342E2C06BD842 /* EXPFloatTuple.m */,
+				2CBB084A4B01AA14CA4F7AE5096590E6 /* EXPMatcher.h */,
+				DB0FD983C4F4C8D7A63A7A54F20FD25B /* EXPMatcherHelpers.h */,
+				0B8C3BDF46CA0CBB874509DC3F509594 /* EXPMatcherHelpers.m */,
+				EC8737BDC5DE775C839AE0ED1AA41310 /* EXPMatchers.h */,
+				6AC9431DBF01BAE351CEB94F8079B5E1 /* EXPMatchers+beCloseTo.h */,
+				FA4C0CF7F5607AEEEEE3B166D38FBCC1 /* EXPMatchers+beCloseTo.m */,
+				EC0D1A953C2AA9B7800136BEE54974A4 /* EXPMatchers+beFalsy.h */,
+				68F5405FFE13765F08A90FA41D2FEF52 /* EXPMatchers+beFalsy.m */,
+				91CE8A9C0CC45D9D92BA0875B0250D36 /* EXPMatchers+beginWith.h */,
+				AC2701C1A2E3971529D6354110797BEC /* EXPMatchers+beginWith.m */,
+				97C81F1CC4B299D6675EA40941D4F9C8 /* EXPMatchers+beGreaterThan.h */,
+				E9CCC62D0483CC801221F983EC76F4A4 /* EXPMatchers+beGreaterThan.m */,
+				48EF7B4B6E3385533D9C11DA070A7F5E /* EXPMatchers+beGreaterThanOrEqualTo.h */,
+				CBBB621EE7045B85BAD3C54B2C8E3DE0 /* EXPMatchers+beGreaterThanOrEqualTo.m */,
+				273761461275F4A20652CFB89438148E /* EXPMatchers+beIdenticalTo.h */,
+				3FDBA3F48A81B86124C735EDB388DB5B /* EXPMatchers+beIdenticalTo.m */,
+				8334E871A437D432C282EC696DF8B3F6 /* EXPMatchers+beInstanceOf.h */,
+				740DD359E769B37496E48F839BA386AD /* EXPMatchers+beInstanceOf.m */,
+				025394D1184C988267CA36A3641ADCE2 /* EXPMatchers+beInTheRangeOf.h */,
+				45A24A3C8D1C53B65493B4E8D18F1482 /* EXPMatchers+beInTheRangeOf.m */,
+				80F13E14E55187C875FD383AF56E95A6 /* EXPMatchers+beKindOf.h */,
+				266398DCACF6172382B5561398D834D1 /* EXPMatchers+beKindOf.m */,
+				A9047BA8316721549C0C8D4BA0BD4782 /* EXPMatchers+beLessThan.h */,
+				97462611374C2BC36E9346809902A0E9 /* EXPMatchers+beLessThan.m */,
+				F7E85FF05389E73724C36CC01BE42789 /* EXPMatchers+beLessThanOrEqualTo.h */,
+				553968311410434B0EB765E3FE3E24C4 /* EXPMatchers+beLessThanOrEqualTo.m */,
+				02039FEBA43EDBFA22345C1D9E0D73F8 /* EXPMatchers+beNil.h */,
+				B2EC1AA5CA197022AE3884244DDEFC44 /* EXPMatchers+beNil.m */,
+				08E939754F6AAC693367D37CC917F36B /* EXPMatchers+beSubclassOf.h */,
+				A2045304FD3ACF2254F6278AD9F846E5 /* EXPMatchers+beSubclassOf.m */,
+				10D4F3967B01E1DDE6183F2A68D49FD6 /* EXPMatchers+beSupersetOf.h */,
+				C6077C99FB206479C9335816B078BFAE /* EXPMatchers+beSupersetOf.m */,
+				6EE429F623246165274BAD02128FF9E3 /* EXPMatchers+beTruthy.h */,
+				D2975A3AC9E39ED20FAF3739BED61A10 /* EXPMatchers+beTruthy.m */,
+				19A76B03DFC5552836D2F4D5B2453A09 /* EXPMatchers+conformTo.h */,
+				538C4DF60E489AD8249BBB09BE2E0A97 /* EXPMatchers+conformTo.m */,
+				79B856D6433C64342E923D99AEB18B35 /* EXPMatchers+contain.h */,
+				C2A2C7E806512A063E5747C84C7395A4 /* EXPMatchers+contain.m */,
+				BC5966471076CBFC7E862D9211B4DBAB /* EXPMatchers+endWith.h */,
+				6A773E17BC52FBD9E90B72C4E64E50D0 /* EXPMatchers+endWith.m */,
+				72EDB3B6F0F9EED670B94CFE77CA9CE0 /* EXPMatchers+equal.h */,
+				A53FC61E9BF3BF15E715E4F1B9D1A58F /* EXPMatchers+equal.m */,
+				E1235A8904FBBCCB6C7029615343271D /* EXPMatchers+haveCountOf.h */,
+				C71D97E5B5F2104841E41A01C85A566F /* EXPMatchers+haveCountOf.m */,
+				3980BEEE91FF836AEB2EF741D4D0460E /* EXPMatchers+postNotification.h */,
+				9988F2ABEA0FF903762BA39AE74DFBA2 /* EXPMatchers+postNotification.m */,
+				DAFA7BE03F07631F827680F13CB21E4E /* EXPMatchers+raise.h */,
+				8A1540B2BFC59E4525BE2D4C2C5F706A /* EXPMatchers+raise.m */,
+				3D8A0313401138D1007E8A1123409635 /* EXPMatchers+raiseWithReason.h */,
+				FBD93BA4615F521B57B096D63A19F9F1 /* EXPMatchers+raiseWithReason.m */,
+				3CCC570B692DB871668023C0B20ECB64 /* EXPMatchers+respondTo.h */,
+				AAE5145280996B8B2B2479DEB5D7F91E /* EXPMatchers+respondTo.m */,
+				F58F19D97652F6DA8E24827886091A67 /* EXPUnsupportedObject.h */,
+				6EFAC88AE760BAF11F5203C73E5E3EA1 /* EXPUnsupportedObject.m */,
+				27934E218434121EAA07952E28378C20 /* NSObject+Expecta.h */,
+				28406D977DCD511233E5E59DB84BAC32 /* NSValue+Expecta.h */,
+				1B5C74C1CF44F74CB72F965CB4C2AEFD /* NSValue+Expecta.m */,
+				04C837AC96027F6699994A2B4284F129 /* Support Files */,
+			);
+			name = Expecta;
+			path = Expecta;
+			sourceTree = "<group>";
+		};
+		1DAAC54752E26AA89C1CF0E50FC80D0E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA3B62759F3D7E9B792E55F106F0348C /* RKValueTransformers-iOS.xcconfig */,
+				4C86C3C976EE2E3E4DC203AE81BC41F6 /* RKValueTransformers-iOS-dummy.m */,
+				2630D0FBE5596B226890ADCD5FA46A1C /* RKValueTransformers-iOS-prefix.pch */,
+				475B2A15484DFEF3650C35EE5AFCBFF2 /* RKValueTransformers-OSX.xcconfig */,
+				62DC21BBDE216DC04D589263BD302FE7 /* RKValueTransformers-OSX-dummy.m */,
+				AC0289766E196002208B259A85983D21 /* RKValueTransformers-OSX-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RKValueTransformers-OSX";
+			sourceTree = "<group>";
+		};
+		39477D72A1D20AFCBBE15A4B9F9D6A71 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7113AAA432F9FED3AA056C963310E8D /* ISO8601DateFormatter-iOS.xcconfig */,
+				5DC9E71EB5D2E7D1FBEEA9310F6AFF8F /* ISO8601DateFormatter-iOS-dummy.m */,
+				358232A1C6D07C16484410D3A90B92C7 /* ISO8601DateFormatter-iOS-prefix.pch */,
+				5013F8D3620E5817E7AB0D257EE23B51 /* ISO8601DateFormatter-OSX.xcconfig */,
+				1B840B20CB9E9E39CC72FEE4F11F423A /* ISO8601DateFormatter-OSX-dummy.m */,
+				2C8A0FC852BD480DC56E3C5E8A1B72F1 /* ISO8601DateFormatter-OSX-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ISO8601DateFormatter-OSX";
+			sourceTree = "<group>";
+		};
+		50194BF964991FB6D33A59B70FC5935F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				45D7109B4DE76127203AC153F733D79C /* ISO8601DateFormatterValueTransformer-iOS.xcconfig */,
+				B45662BD9030DDEF2A66C2A48BEB96C3 /* ISO8601DateFormatterValueTransformer-iOS-dummy.m */,
+				6E6EABA5082FA2CF1AC2451B4BB2B6B7 /* ISO8601DateFormatterValueTransformer-iOS-prefix.pch */,
+				EEE5EC3BAE00575794699FC9A73B60ED /* ISO8601DateFormatterValueTransformer-OSX.xcconfig */,
+				9CFCB3DB52DB293718F7D7FC56CD1860 /* ISO8601DateFormatterValueTransformer-OSX-dummy.m */,
+				F298FD569EAAAF9A11E922DC0B8EF656 /* ISO8601DateFormatterValueTransformer-OSX-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/ISO8601DateFormatterValueTransformer-OSX";
+			sourceTree = "<group>";
+		};
+		51B0363647F03434EE96287CC12C215F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				41BE8616BF5E63241281C8B06C6E7132 /* Foundation.framework */,
+				93F97417068D6188E81CBE7C99A944DE /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5F14C9FC328F275B60A38CE2D7AD1328 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				112765961F3E3AC14AF3FBF449ABA5BA /* Expecta */,
+				D15916B801A56C57C688DCD0A6AA35DF /* ISO8601DateFormatter */,
+				A9E51E0ECFE952BA126D183B892F615F /* RKValueTransformers */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				90675230E72A1A8E8E2C6BAE72F8FBC6 /* Development Pods */,
+				DE13583AB8F794BBEAF85E3A80DA349C /* Frameworks */,
+				5F14C9FC328F275B60A38CE2D7AD1328 /* Pods */,
+				B9D63FDC8828E1C99617620959195104 /* Products */,
+				0A56B91D6FF243A39DBB20F5A2B07FB6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B8C359FE393D006C8FAF575D96536A3 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				1A1297D03E724959CC20B1D9E8A12A23 /* Cocoa.framework */,
+				4E93DCE856A228AE0280B2DCD3EAB120 /* Foundation.framework */,
+				4430F4D9A65DAD86E75EE94F9BDA5ED1 /* XCTest.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		8DB17286236B7EE62305AEFADB40F603 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F6EC87AD1C828A392A50313F861D1DDB /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-acknowledgements.markdown */,
+				7C92868BC2562CD28031938C230DD418 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-acknowledgements.plist */,
+				CA02A532A306263941ECCED8802348F4 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-dummy.m */,
+				A79F3B184574F11D0F28FEFCF5854E72 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-frameworks.sh */,
+				05DD08B71C164E44B937F37448B1112F /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-resources.sh */,
+				3110F116BBBCFA5A954BFB1040135E94 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests.debug.xcconfig */,
+				EABFB025CB58EAAFAA7F75D929FF4B00 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests.release.xcconfig */,
+			);
+			name = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests";
+			path = "Target Support Files/Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests";
+			sourceTree = "<group>";
+		};
+		90675230E72A1A8E8E2C6BAE72F8FBC6 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5FA2E57EB75CAD38FEB6F095AFF7F39 /* ISO8601DateFormatterValueTransformer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		929851E7A0D4BAEEC70962FAAC639941 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A70AE9D1B80EB49E6774E4DFF25E6133 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS-acknowledgements.markdown */,
+				6B78D4C9A646952DFE85504F1F656A38 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS-acknowledgements.plist */,
+				1F83CF005DCDCDD7E69409F6FC3F6346 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS-dummy.m */,
+				A32152D8FDE9AB3160864A6E175B17D4 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS-resources.sh */,
+				7AA787AF389C303325EC4F50EBF72DE4 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS.debug.xcconfig */,
+				B1D103EE23B9EEE00520B4B69707647E /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS.release.xcconfig */,
+			);
+			name = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS";
+			path = "Target Support Files/Pods-Framework-ISO8601DateFormatterValueTransformer macOS";
+			sourceTree = "<group>";
+		};
+		97A620EC4D1AD151EF432B2C0CB8A508 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6D128C92752A0394A5DB4EA4F17F30FA /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-acknowledgements.markdown */,
+				1A477048BF20412719712F9E716AA733 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-acknowledgements.plist */,
+				014B095A94F8594C1D5E97285CF5B633 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-dummy.m */,
+				CD549C7B54622F5B8C1AC90C9D3508B7 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-frameworks.sh */,
+				8D9ACE3D949E951C994586CBD12051FA /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-resources.sh */,
+				9D94B8A02B4B31213A3D8AFD9AE36F2C /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.debug.xcconfig */,
+				34C3DDF878FBF1C2CFEDED5770C113BD /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.release.xcconfig */,
+			);
+			name = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests";
+			path = "Target Support Files/Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests";
+			sourceTree = "<group>";
+		};
+		A9E51E0ECFE952BA126D183B892F615F /* RKValueTransformers */ = {
+			isa = PBXGroup;
+			children = (
+				7086A3A1A037B9E46317802DE7BEF5BB /* RKValueTransformers.h */,
+				B7D16273FE2BEDC3D5CE7CE937A2F3C2 /* RKValueTransformers.m */,
+				1DAAC54752E26AA89C1CF0E50FC80D0E /* Support Files */,
+			);
+			name = RKValueTransformers;
+			path = RKValueTransformers;
+			sourceTree = "<group>";
+		};
+		B3E7A091EB63FCB27EEFE6FFCE6636EB /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS */ = {
+			isa = PBXGroup;
+			children = (
+				78A56D22CC4B576A4372B75839926590 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS-acknowledgements.markdown */,
+				A2D4F8B7952F16415DCD304408C97D37 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS-acknowledgements.plist */,
+				9AF017530518C2535BF8C0B9BDD3983A /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS-dummy.m */,
+				F00A278FDFBC50D3B1405606C580E52E /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS-resources.sh */,
+				27D6BC5F6818A72FBF88A5B8174F621F /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS.debug.xcconfig */,
+				2C309FCDADF07B76DD9DF2E4DF8AB0C4 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS.release.xcconfig */,
+			);
+			name = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS";
+			path = "Target Support Files/Pods-Framework-ISO8601DateFormatterValueTransformer iOS";
+			sourceTree = "<group>";
+		};
+		B9D63FDC8828E1C99617620959195104 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E47E9D45B09D550F4E2FA5AB3E3BF41 /* libExpecta-iOS.a */,
+				E30E77917B2A6AF4017B5B156648F461 /* libExpecta-OSX.a */,
+				E4ECDF5ACEB3DF4DC07A801689DA9C64 /* libISO8601DateFormatter-iOS.a */,
+				EA1CDCACE2C602636A963A2CD1E71174 /* libISO8601DateFormatter-OSX.a */,
+				C1E1A626400C2356D47CDED363656F17 /* libISO8601DateFormatterValueTransformer-iOS.a */,
+				836362019C1D9A56518957AECF2E606C /* libISO8601DateFormatterValueTransformer-OSX.a */,
+				B698DC79745D45E777A459BED465B531 /* libPods-Framework-ISO8601DateFormatterValueTransformer iOS.a */,
+				DBCC26209111967A36E85106703B21BE /* libPods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.a */,
+				FC39EDB4A50BDC4E0E1BB61F8C70EBD7 /* libPods-Framework-ISO8601DateFormatterValueTransformer macOS.a */,
+				7D693AF0F90A3A80F75A8267132601B0 /* libPods-Framework-ISO8601DateFormatterValueTransformer macOS Tests.a */,
+				74EABA1B61D308D7867A29E5C08F2FF0 /* libRKValueTransformers-iOS.a */,
+				70122B6252A85D13C5B04C3F016A243D /* libRKValueTransformers-OSX.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C26222D08738C4DCFF68E24F356F5A92 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				7DFC01BD1FA8A8F12B3A3206084D8140 /* ISO8601DateFormatterValueTransformer.h */,
+				BFADDCA750745873762EFE1F99FB4705 /* ISO8601DateFormatterValueTransformer.m */,
+			);
+			name = Code;
+			path = Code;
+			sourceTree = "<group>";
+		};
+		D15916B801A56C57C688DCD0A6AA35DF /* ISO8601DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				C7843C0836AC122902D3ED6760F9AEBB /* ISO8601DateFormatter.h */,
+				3B6526F6EC61BC532F6C34FA3FE57B6E /* ISO8601DateFormatter.m */,
+				39477D72A1D20AFCBBE15A4B9F9D6A71 /* Support Files */,
+			);
+			name = ISO8601DateFormatter;
+			path = ISO8601DateFormatter;
+			sourceTree = "<group>";
+		};
+		DE13583AB8F794BBEAF85E3A80DA349C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51B0363647F03434EE96287CC12C215F /* iOS */,
+				8B8C359FE393D006C8FAF575D96536A3 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5FA2E57EB75CAD38FEB6F095AFF7F39 /* ISO8601DateFormatterValueTransformer */ = {
+			isa = PBXGroup;
+			children = (
+				C26222D08738C4DCFF68E24F356F5A92 /* Code */,
+				50194BF964991FB6D33A59B70FC5935F /* Support Files */,
+			);
+			name = ISO8601DateFormatterValueTransformer;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		16B9020AE743DC98A47EE100241DA852 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCE4176D2DE01C34BDEDC550FFED33AA /* EXPBlockDefinedMatcher.h in Headers */,
+				680C8805F6304868D09BFE8BF158A9DA /* EXPDefines.h in Headers */,
+				55FA8485F6192EB56C81D753837AB3BD /* EXPDoubleTuple.h in Headers */,
+				1C0C325E139E4A5F19C54837E4578845 /* Expecta.h in Headers */,
+				52FF053A3754FA7FC432B0145415FD2F /* ExpectaObject.h in Headers */,
+				99A4264D975E166CB69223BC6B85B006 /* ExpectaSupport.h in Headers */,
+				BE5C0EE255B3AA6E23A666715E37B789 /* EXPExpect.h in Headers */,
+				C7C88192B731A7561A0B3553414EB003 /* EXPFloatTuple.h in Headers */,
+				5C6F3A3B4A184630DF3D8875E4EE8466 /* EXPMatcher.h in Headers */,
+				5F8100002349BCA5D761B789BEFD1D2D /* EXPMatcherHelpers.h in Headers */,
+				C48A35ED75BC02394A734BEBB009F360 /* EXPMatchers+beCloseTo.h in Headers */,
+				A4232C6E330861DFCEF23C7BC062B0EA /* EXPMatchers+beFalsy.h in Headers */,
+				9FD2D3B71C62C1297B56FE8673BA2335 /* EXPMatchers+beginWith.h in Headers */,
+				5D6867817B3BBA1BED604C15A08E40A0 /* EXPMatchers+beGreaterThan.h in Headers */,
+				CE535783A570B4E7F6C7217C14401D79 /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */,
+				BCB953F14E05C3D034A2E6F749994490 /* EXPMatchers+beIdenticalTo.h in Headers */,
+				9DBFB748A9BAF389C69DF1C114FF4ED1 /* EXPMatchers+beInstanceOf.h in Headers */,
+				56D8D7F57817FE231B4E0D82787167EB /* EXPMatchers+beInTheRangeOf.h in Headers */,
+				F07BEF2B7C2F3847F8B6A982B9EA1A35 /* EXPMatchers+beKindOf.h in Headers */,
+				2DA973F1699151988E16668976CBAE4F /* EXPMatchers+beLessThan.h in Headers */,
+				8621A06B96E74CA25CF7F9B3C9850AA9 /* EXPMatchers+beLessThanOrEqualTo.h in Headers */,
+				D2CA811B74D480A5C7DD44D03BD29F3D /* EXPMatchers+beNil.h in Headers */,
+				04377562DD2CB49DE64C2B9ABA239D95 /* EXPMatchers+beSubclassOf.h in Headers */,
+				690CD57BAC7A16F86021CCB1686A9FFD /* EXPMatchers+beSupersetOf.h in Headers */,
+				A2D96D8BFD986C449BE474B9A5D7DBF8 /* EXPMatchers+beTruthy.h in Headers */,
+				ED5A5D00C69AC3E4720A03D0EAF1F89C /* EXPMatchers+conformTo.h in Headers */,
+				52F2E0E0C1B0CE9F93ABFA523E80200D /* EXPMatchers+contain.h in Headers */,
+				FFA26E33FBCCB4E4DCC0E34875A65649 /* EXPMatchers+endWith.h in Headers */,
+				34CC45A4B7535949ECE9CC60DAE36982 /* EXPMatchers+equal.h in Headers */,
+				2F57B6C32C7B508026E96C80618EC580 /* EXPMatchers+haveCountOf.h in Headers */,
+				8B451C65EEB7D4E66A976E6283B28DAC /* EXPMatchers+postNotification.h in Headers */,
+				F963E6882F5E644445FA02E958D46597 /* EXPMatchers+raise.h in Headers */,
+				50A139CBD2B5AB7BD75D77E2E96E6707 /* EXPMatchers+raiseWithReason.h in Headers */,
+				0B2A7E0E9B753A4CB6DB8ECE401F9244 /* EXPMatchers+respondTo.h in Headers */,
+				69D63C7E1506ADB2F03F1881F0980996 /* EXPMatchers.h in Headers */,
+				A917856342CF313FB0A7AF3220E02BF3 /* EXPUnsupportedObject.h in Headers */,
+				96609120DB6036ED13A5994A6366A38F /* NSObject+Expecta.h in Headers */,
+				7F69BFFC531FAA9AF43E565DA0472B56 /* NSValue+Expecta.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB101E454257C70A9C6D1DE18870E54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD3744EA57C9C14503D51119030E7610 /* ISO8601DateFormatter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26CAF2DD48919FACA69935D47D233026 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2246FBA637669E65F38E2D8FB9D08EB /* ISO8601DateFormatterValueTransformer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB31FFF4F560E6538938181D52ECD61 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2577B4220B6FC8AC6CC5BD203D3673FC /* RKValueTransformers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E04C5FA9358981C26390B0A0F305F04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD11D6D9992E3168933DF0EB14B55240 /* ISO8601DateFormatterValueTransformer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F3B2719D2862DDBF47742F8260E67B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2ED1D6473E6580A1A872FC6B74E060 /* EXPBlockDefinedMatcher.h in Headers */,
+				F4FF341467EFD0E961FF67741FB00706 /* EXPDefines.h in Headers */,
+				7C92CC6867CFDC4FF0E4CFB8D540C87A /* EXPDoubleTuple.h in Headers */,
+				ED6962C11723F0FA38255558F58921B9 /* Expecta.h in Headers */,
+				BDF1D2B624EA4AA247D1E15FCF151454 /* ExpectaObject.h in Headers */,
+				1BDB1802A642F8598A3BBBBCA1A8E058 /* ExpectaSupport.h in Headers */,
+				D9E651B49F98F3C77F033D74A8027F42 /* EXPExpect.h in Headers */,
+				557F29E9F80360F42FF9B559E5206E1A /* EXPFloatTuple.h in Headers */,
+				B4F7662A7E114B4953F3A24A263CE7C3 /* EXPMatcher.h in Headers */,
+				8760629720999C0E803838DACE5BFC50 /* EXPMatcherHelpers.h in Headers */,
+				937DFCA1D4708FC2C24CC81A4952D45D /* EXPMatchers+beCloseTo.h in Headers */,
+				4B2177F1AC872E961E300660CDB60769 /* EXPMatchers+beFalsy.h in Headers */,
+				9E424F5F9CA596D82D46778ECDBEC02A /* EXPMatchers+beginWith.h in Headers */,
+				8FEB51DA8974B508A2C2E826E5A82242 /* EXPMatchers+beGreaterThan.h in Headers */,
+				53C98F9ED712A58899DD89AB96BB247B /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */,
+				E9123C668D1B4D5775012DA6EEAEB84C /* EXPMatchers+beIdenticalTo.h in Headers */,
+				BF33751DC33F3772610BE9E7D6EF3D55 /* EXPMatchers+beInstanceOf.h in Headers */,
+				D8EAF244BA124C6AFB4CFFE229AC7926 /* EXPMatchers+beInTheRangeOf.h in Headers */,
+				368DB5130C30E66F6240972D730F4AD8 /* EXPMatchers+beKindOf.h in Headers */,
+				5D048F0E0F1473E64E40D6DB0D6CD207 /* EXPMatchers+beLessThan.h in Headers */,
+				CEE250BB756C1DDB32BC72B82BE1B0CC /* EXPMatchers+beLessThanOrEqualTo.h in Headers */,
+				F2BA91CDC280718EB0F6933EC41051A0 /* EXPMatchers+beNil.h in Headers */,
+				B813D80DA13270D7091288A7AD8909E2 /* EXPMatchers+beSubclassOf.h in Headers */,
+				2D6DE3B1DB02A920FA953E0D4AFA7E5A /* EXPMatchers+beSupersetOf.h in Headers */,
+				9CD3DE4DF3BEC7C712B0FD6D43C2E624 /* EXPMatchers+beTruthy.h in Headers */,
+				29C2BEDFFA7F28D3D0BA7E3C40A05AD2 /* EXPMatchers+conformTo.h in Headers */,
+				FBA3DC8892D33D39FC3293045D3382BB /* EXPMatchers+contain.h in Headers */,
+				D5056822E2375C03774CE42A026B809A /* EXPMatchers+endWith.h in Headers */,
+				75674CD6DFB404410B97E3E042C46659 /* EXPMatchers+equal.h in Headers */,
+				1AB199B7D4D792296F882CD857F26DC6 /* EXPMatchers+haveCountOf.h in Headers */,
+				B8662514A136FD8DE57382C6885EAEAA /* EXPMatchers+postNotification.h in Headers */,
+				770CE8CB4D95B9BC6A4730F1B625244C /* EXPMatchers+raise.h in Headers */,
+				68E5F8554DB517DD8233596068FCF4D0 /* EXPMatchers+raiseWithReason.h in Headers */,
+				5AFD1EAF331584DF492B60F0D7623DCE /* EXPMatchers+respondTo.h in Headers */,
+				D44A7684630215F9A7650A3496CAE2FF /* EXPMatchers.h in Headers */,
+				1978D35A1E82E95DE70416172B0B4BE2 /* EXPUnsupportedObject.h in Headers */,
+				6BB8B145015AC85A3A47320A4B2C12E1 /* NSObject+Expecta.h in Headers */,
+				07A36C7D519DE893E56BD016BC0E3E6B /* NSValue+Expecta.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFEF12B95153F1CCDE9444B0D88B2E47 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C34F3F396E2E608AF968BFDBC980855 /* RKValueTransformers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEAA58B2B7AE81C1F1681AE2D6347149 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D029C16FA1BCD2776BD761C93972C29E /* ISO8601DateFormatter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A2020E10A3C090B4BBD1F33C0BB08A2 /* RKValueTransformers-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 121576C74CCC703CA662E5228E42E58B /* Build configuration list for PBXNativeTarget "RKValueTransformers-OSX" */;
+			buildPhases = (
+				54BD264B94A1FDAF14A131678EC1A852 /* Sources */,
+				DAAA04D2CF1B1A550D925FB8C35FA0B5 /* Frameworks */,
+				BFEF12B95153F1CCDE9444B0D88B2E47 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RKValueTransformers-OSX";
+			productName = "RKValueTransformers-OSX";
+			productReference = 70122B6252A85D13C5B04C3F016A243D /* libRKValueTransformers-OSX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		26E433DD20A2461B022C0AE9E55F1398 /* ISO8601DateFormatterValueTransformer-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C26096B8FCC91B84FB6C5838D4A58F0E /* Build configuration list for PBXNativeTarget "ISO8601DateFormatterValueTransformer-OSX" */;
+			buildPhases = (
+				83C4954965FD7FBDDDE39BE79B62BFB9 /* Sources */,
+				6709BED66E14E87B98453D8EC350E407 /* Frameworks */,
+				26CAF2DD48919FACA69935D47D233026 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A989F33E34D26C1A50B91289484EB9AF /* PBXTargetDependency */,
+				175ACDE3D02EF2D67A48ACC49B7E0381 /* PBXTargetDependency */,
+			);
+			name = "ISO8601DateFormatterValueTransformer-OSX";
+			productName = "ISO8601DateFormatterValueTransformer-OSX";
+			productReference = 836362019C1D9A56518957AECF2E606C /* libISO8601DateFormatterValueTransformer-OSX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		39126B9D4D70556C7D59464370043C52 /* ISO8601DateFormatter-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4CE641CB4B9C59510967B192DBA4AC5 /* Build configuration list for PBXNativeTarget "ISO8601DateFormatter-iOS" */;
+			buildPhases = (
+				C55D72B6D9AF10D6D448C4F4C02E5432 /* Sources */,
+				F3EBC95950A54A183893D4D5284DBCC5 /* Frameworks */,
+				1AB101E454257C70A9C6D1DE18870E54 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ISO8601DateFormatter-iOS";
+			productName = "ISO8601DateFormatter-iOS";
+			productReference = E4ECDF5ACEB3DF4DC07A801689DA9C64 /* libISO8601DateFormatter-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4F1B345223C3470C7957826783BBD43F /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE6B6A4F1D311DD5FECADB359A4E2391 /* Build configuration list for PBXNativeTarget "Pods-Framework-ISO8601DateFormatterValueTransformer macOS" */;
+			buildPhases = (
+				B44141C698FCC161E27DCAE6B0368142 /* Sources */,
+				C93F55E1BCEC70213DD22447D1EDFE10 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2AF43ECBD520CA66530FB2F175F6E58 /* PBXTargetDependency */,
+				50E0CC5017AA9D6CDD1EA869208E1390 /* PBXTargetDependency */,
+			);
+			name = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS";
+			productName = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS";
+			productReference = FC39EDB4A50BDC4E0E1BB61F8C70EBD7 /* libPods-Framework-ISO8601DateFormatterValueTransformer macOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5146B7AB0F5CF1F95A5AE83325166B6F /* ISO8601DateFormatterValueTransformer-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8787846E49274C928D83F70AFB49BDD8 /* Build configuration list for PBXNativeTarget "ISO8601DateFormatterValueTransformer-iOS" */;
+			buildPhases = (
+				A2BF9C0AAAF6527F636EA69B90B2A1EC /* Sources */,
+				0999D7BCA215943280E7156E4C0F7BB1 /* Frameworks */,
+				7E04C5FA9358981C26390B0A0F305F04 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBF565EF89BC36B127BA590B7299F6E3 /* PBXTargetDependency */,
+				32903B2117BB69FF27084F2CCD2CE379 /* PBXTargetDependency */,
+			);
+			name = "ISO8601DateFormatterValueTransformer-iOS";
+			productName = "ISO8601DateFormatterValueTransformer-iOS";
+			productReference = C1E1A626400C2356D47CDED363656F17 /* libISO8601DateFormatterValueTransformer-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5F39FBBB83889ABE96EEC4FC42FA736C /* Expecta-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D22AD499F3025AFAF6DAC0C7252D6C96 /* Build configuration list for PBXNativeTarget "Expecta-OSX" */;
+			buildPhases = (
+				42F257781E925AE6A776A870CE9FCFD4 /* Sources */,
+				7D8EF5661CB0C19EA985737A701B0DC9 /* Frameworks */,
+				16B9020AE743DC98A47EE100241DA852 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Expecta-OSX";
+			productName = "Expecta-OSX";
+			productReference = E30E77917B2A6AF4017B5B156648F461 /* libExpecta-OSX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		605DBF1C91154E5EE7624965180A02E0 /* ISO8601DateFormatter-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E7D444B11B03DFB0C399CBFEE3E17A2 /* Build configuration list for PBXNativeTarget "ISO8601DateFormatter-OSX" */;
+			buildPhases = (
+				45B494F845C328E1548E255AAFBD4F46 /* Sources */,
+				B1FBE0B6A62DC84EF2257D2F05FE0399 /* Frameworks */,
+				FEAA58B2B7AE81C1F1681AE2D6347149 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ISO8601DateFormatter-OSX";
+			productName = "ISO8601DateFormatter-OSX";
+			productReference = EA1CDCACE2C602636A963A2CD1E71174 /* libISO8601DateFormatter-OSX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6DA1968400C08E2853CEC1363887F04D /* Expecta-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40AB2A40D5ECEFA6E2AD57F389A64A4A /* Build configuration list for PBXNativeTarget "Expecta-iOS" */;
+			buildPhases = (
+				BE15335D258A57829127607DE1039796 /* Sources */,
+				5C3B6D7EEA8431FDD1208511B075CAC1 /* Frameworks */,
+				A3F3B2719D2862DDBF47742F8260E67B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Expecta-iOS";
+			productName = "Expecta-iOS";
+			productReference = 4E47E9D45B09D550F4E2FA5AB3E3BF41 /* libExpecta-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6F5299F6992B1CE2228AF1065CDF0F1C /* RKValueTransformers-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0F0CD85902E459BDA199AD32EDBC9DF /* Build configuration list for PBXNativeTarget "RKValueTransformers-iOS" */;
+			buildPhases = (
+				230D245FEF56375F34E7C91CACC5771A /* Sources */,
+				A53A0E866EBA64AE1A53202E6EC019E3 /* Frameworks */,
+				6EB31FFF4F560E6538938181D52ECD61 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RKValueTransformers-iOS";
+			productName = "RKValueTransformers-iOS";
+			productReference = 74EABA1B61D308D7867A29E5C08F2FF0 /* libRKValueTransformers-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B70AF67611B05D3E821D83E1C9F95CB8 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0CD01BC31FF50A88869615EC54EE62C /* Build configuration list for PBXNativeTarget "Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests" */;
+			buildPhases = (
+				CBEE6FA04A69BCB65BED7F39BED5ABBF /* Sources */,
+				DE8207B6BA40AF4C7192B3552171FB85 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48E3571B8003E696FC2C0B0D6AA5A39D /* PBXTargetDependency */,
+				5CBF6E09E0298A3A9DDDA3A47F60EC0E /* PBXTargetDependency */,
+				1464A457015DD461D7C457F518A966E1 /* PBXTargetDependency */,
+				C1D259914CCA83603F0D82CF80836518 /* PBXTargetDependency */,
+			);
+			name = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests";
+			productName = "Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests";
+			productReference = 7D693AF0F90A3A80F75A8267132601B0 /* libPods-Framework-ISO8601DateFormatterValueTransformer macOS Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D728BB13C14E7D9241C80F5F0E896387 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9A7C7F9C0E3CD24182A4B672A2F535E /* Build configuration list for PBXNativeTarget "Pods-Framework-ISO8601DateFormatterValueTransformer iOS" */;
+			buildPhases = (
+				2705C1014C66777348DA5E97A691BCED /* Sources */,
+				36FB7E5A2F81465EF26DD24302719D24 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C341249026C7C7EC5D3605447EC01A41 /* PBXTargetDependency */,
+				E88EA4080FB54807A8EC1D3F771E57D4 /* PBXTargetDependency */,
+			);
+			name = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS";
+			productName = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS";
+			productReference = B698DC79745D45E777A459BED465B531 /* libPods-Framework-ISO8601DateFormatterValueTransformer iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FBD157BC18CF5427602091F39AEC620D /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 336E9D9E7FB94042DC76150CF6BA171A /* Build configuration list for PBXNativeTarget "Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests" */;
+			buildPhases = (
+				50868E73CD54EF3DBEB3E8271B964B9B /* Sources */,
+				08E5873946C11E319728C942FF9B5E4F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22417C5ED559738EFCD0D9F212473AE9 /* PBXTargetDependency */,
+				C453B9B67E6868D3101819668BFF47C8 /* PBXTargetDependency */,
+				048F43F72A7E706F46871F181AFD0639 /* PBXTargetDependency */,
+				3AFF051689BD56B61F0C03F635FC0B75 /* PBXTargetDependency */,
+			);
+			name = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests";
+			productName = "Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests";
+			productReference = DBCC26209111967A36E85106703B21BE /* libPods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B9D63FDC8828E1C99617620959195104 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DA1968400C08E2853CEC1363887F04D /* Expecta-iOS */,
+				5F39FBBB83889ABE96EEC4FC42FA736C /* Expecta-OSX */,
+				39126B9D4D70556C7D59464370043C52 /* ISO8601DateFormatter-iOS */,
+				605DBF1C91154E5EE7624965180A02E0 /* ISO8601DateFormatter-OSX */,
+				5146B7AB0F5CF1F95A5AE83325166B6F /* ISO8601DateFormatterValueTransformer-iOS */,
+				26E433DD20A2461B022C0AE9E55F1398 /* ISO8601DateFormatterValueTransformer-OSX */,
+				D728BB13C14E7D9241C80F5F0E896387 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS */,
+				FBD157BC18CF5427602091F39AEC620D /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests */,
+				4F1B345223C3470C7957826783BBD43F /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS */,
+				B70AF67611B05D3E821D83E1C9F95CB8 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests */,
+				6F5299F6992B1CE2228AF1065CDF0F1C /* RKValueTransformers-iOS */,
+				0A2020E10A3C090B4BBD1F33C0BB08A2 /* RKValueTransformers-OSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		230D245FEF56375F34E7C91CACC5771A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3F5DEAB41686084C5EA11452E612066 /* RKValueTransformers-iOS-dummy.m in Sources */,
+				B00E40ED4A94ECD4746359F3A5287B17 /* RKValueTransformers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2705C1014C66777348DA5E97A691BCED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B58B5AE4A4B15CC26FF2B06A3B93E5B /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F257781E925AE6A776A870CE9FCFD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A3AB9AF454C3DF67A3289C22AF9C59 /* EXPBlockDefinedMatcher.m in Sources */,
+				E4F8DDAB4B5FCE455AB8FC2C0A68B630 /* EXPDoubleTuple.m in Sources */,
+				260EFB6B49D21DEB532F84988597DF3B /* Expecta-OSX-dummy.m in Sources */,
+				CF71A834ACBB02736C9B3A57A76D8592 /* ExpectaObject.m in Sources */,
+				E8421B08A9181CF7B66F7B151E3B2A40 /* ExpectaSupport.m in Sources */,
+				D3AD38B864DBABBEE4616CD87B3B4738 /* EXPExpect.m in Sources */,
+				9C4E3C202A7CBFAD4B2F6AD83E252385 /* EXPFloatTuple.m in Sources */,
+				1D7B00B084E8241E70033E6140BF1DBB /* EXPMatcherHelpers.m in Sources */,
+				13988B8C2CC557588383BEC3A28C92FD /* EXPMatchers+beCloseTo.m in Sources */,
+				9D1B615F01EB0BC625583F2E9BF14C23 /* EXPMatchers+beFalsy.m in Sources */,
+				B96259473306C80F2FC1A60467CC3F45 /* EXPMatchers+beginWith.m in Sources */,
+				8ED3D142FC43843A652F745A6DE0CC23 /* EXPMatchers+beGreaterThan.m in Sources */,
+				23CF658D441743D972468CB65B3C97CD /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */,
+				E30DFF8CBC7878D0576A9B2D2DAB6E26 /* EXPMatchers+beIdenticalTo.m in Sources */,
+				873F059AE66B70E4778F0832E5725B6B /* EXPMatchers+beInstanceOf.m in Sources */,
+				9BDE2528914D999A1086AAA94A0562BC /* EXPMatchers+beInTheRangeOf.m in Sources */,
+				18D0494B504FC870C71776096AF7EAB7 /* EXPMatchers+beKindOf.m in Sources */,
+				EBA6D22387A94B2442E349E6C41C3761 /* EXPMatchers+beLessThan.m in Sources */,
+				0587892740E3E0361405E7753E8FFA62 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */,
+				1D717263A32ED07D431D0DDA05DC2626 /* EXPMatchers+beNil.m in Sources */,
+				10038167B66DCE8007AE64FE5E07B028 /* EXPMatchers+beSubclassOf.m in Sources */,
+				6038FEE15DC5619A1E0D6BA30513832E /* EXPMatchers+beSupersetOf.m in Sources */,
+				FACC83FEC1B73E2B890A21E8F212311D /* EXPMatchers+beTruthy.m in Sources */,
+				5316CD08B6B71B581FAFCEAC726200B6 /* EXPMatchers+conformTo.m in Sources */,
+				66458D58D30A1BB842E60A6C0DA48E02 /* EXPMatchers+contain.m in Sources */,
+				85EDD924742B8F6C97AF4813A65DF401 /* EXPMatchers+endWith.m in Sources */,
+				F5E944D9AF3F1EA7B5D41E2BF6DECC2B /* EXPMatchers+equal.m in Sources */,
+				C6AC9A898C125E316E5A5466CC2FEE7B /* EXPMatchers+haveCountOf.m in Sources */,
+				8ADF1E6012FB2BE20FD92404055B68BE /* EXPMatchers+postNotification.m in Sources */,
+				DCBD3B324B30ACF9697775533E0C3FB1 /* EXPMatchers+raise.m in Sources */,
+				5E5ED8205E3F22A011CD0ED599F554D9 /* EXPMatchers+raiseWithReason.m in Sources */,
+				367476EFDFA2D3C705D3789CC2926731 /* EXPMatchers+respondTo.m in Sources */,
+				B973E5C43FCF32D4C7F249BFFFBF28B0 /* EXPUnsupportedObject.m in Sources */,
+				67F51DA3F29C9AF19F509B26C8C355B2 /* NSValue+Expecta.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45B494F845C328E1548E255AAFBD4F46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6494089C534B3D916DC3540022873140 /* ISO8601DateFormatter-OSX-dummy.m in Sources */,
+				1998811C6E687484D48AC4CF574D5067 /* ISO8601DateFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50868E73CD54EF3DBEB3E8271B964B9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC4B7A59BB12455A36B2F052586BFFB /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BD264B94A1FDAF14A131678EC1A852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5C8F542176EB8FBF6FD7D8A9E4F939A /* RKValueTransformers-OSX-dummy.m in Sources */,
+				6F30FCEFC9C8ADFBEA3679C6CABE0583 /* RKValueTransformers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C4954965FD7FBDDDE39BE79B62BFB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B53AC07B37A5F4300AF7280B3B4177E /* ISO8601DateFormatterValueTransformer-OSX-dummy.m in Sources */,
+				44A6BE106E4AC6E23DF959877D2204F0 /* ISO8601DateFormatterValueTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2BF9C0AAAF6527F636EA69B90B2A1EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF2B3146197D8370AFB3FEDD3233427 /* ISO8601DateFormatterValueTransformer-iOS-dummy.m in Sources */,
+				F682ADB42A93EE0C74F7048CB0EDD7B0 /* ISO8601DateFormatterValueTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44141C698FCC161E27DCAE6B0368142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7405C51EB8A207D4C04646C01F35A8B /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE15335D258A57829127607DE1039796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7187C7157277599E9861A40D3DB1AE /* EXPBlockDefinedMatcher.m in Sources */,
+				0A7C04954AB6E69A9F441E882C7C4C1C /* EXPDoubleTuple.m in Sources */,
+				7969F09FADDD35D5AEF77AF7A7ACC5EE /* Expecta-iOS-dummy.m in Sources */,
+				BCDD9845064B0373B0E20939F909422C /* ExpectaObject.m in Sources */,
+				455D5EEB7F57DA9226FBA882E6C832A9 /* ExpectaSupport.m in Sources */,
+				73208214ACB48A4C109233DB8A5389CD /* EXPExpect.m in Sources */,
+				8550D39ACA1D73FA5615E9FC375AC5B4 /* EXPFloatTuple.m in Sources */,
+				E3E1B9F18FD04234FCC37BFCACCC310F /* EXPMatcherHelpers.m in Sources */,
+				0D37A8AAC9D3F74CD453DCE53C569572 /* EXPMatchers+beCloseTo.m in Sources */,
+				1B43411C748211A852427B144343C32D /* EXPMatchers+beFalsy.m in Sources */,
+				CA9657366D374534C65090CD24C59108 /* EXPMatchers+beginWith.m in Sources */,
+				DA37B1607E1B2F6D04294F4E78D9EB03 /* EXPMatchers+beGreaterThan.m in Sources */,
+				40708A883A23D8BD3F3283A03B061C2C /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */,
+				A4B6FCC948ABF279CF1201A700FF7C90 /* EXPMatchers+beIdenticalTo.m in Sources */,
+				DA6524BDDF67430E02AE48ADC3E08E8D /* EXPMatchers+beInstanceOf.m in Sources */,
+				C84F143737CC55C40250DD82EFB428BC /* EXPMatchers+beInTheRangeOf.m in Sources */,
+				2568AE9B78890B00684222F77B269E59 /* EXPMatchers+beKindOf.m in Sources */,
+				DC68E1BE83C024AE33DC5A9374CA38BA /* EXPMatchers+beLessThan.m in Sources */,
+				CBB9BF9DE4DCB6C686A9B21FF8A971A0 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */,
+				940AB599081B21959C448AC8BA7572A8 /* EXPMatchers+beNil.m in Sources */,
+				216FBD2513740DEBF6AC90B2F2F1525A /* EXPMatchers+beSubclassOf.m in Sources */,
+				B22E0759C5B489B8F600E76BA030694C /* EXPMatchers+beSupersetOf.m in Sources */,
+				C55B488D206BB369FE0A9F0B96CC23F5 /* EXPMatchers+beTruthy.m in Sources */,
+				2B57FE7AD247863F5CD909C88D260D20 /* EXPMatchers+conformTo.m in Sources */,
+				FA32636A1D2BEF75C8FB0C194B8A224C /* EXPMatchers+contain.m in Sources */,
+				CA3382D2CAC0DE5C1EA690F7F5672C30 /* EXPMatchers+endWith.m in Sources */,
+				CCACDF3384559650069D19A58048A00F /* EXPMatchers+equal.m in Sources */,
+				ED395C2BD183096EED26F74865E847A5 /* EXPMatchers+haveCountOf.m in Sources */,
+				4D959764C8AFEF7E9D0C86EE346E803F /* EXPMatchers+postNotification.m in Sources */,
+				02AD942BBD7EE60E4FBE4030A71E6EE2 /* EXPMatchers+raise.m in Sources */,
+				94714F1EC5346BC053A888B374C02C83 /* EXPMatchers+raiseWithReason.m in Sources */,
+				84238BF6D13BF13C494D7B04E535C18A /* EXPMatchers+respondTo.m in Sources */,
+				5A7A8147C1E33C9CAD3F2CEBC04A73A1 /* EXPUnsupportedObject.m in Sources */,
+				34FABF2DCDB6F32EAD2A0F187418A193 /* NSValue+Expecta.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55D72B6D9AF10D6D448C4F4C02E5432 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C20E65E90A84E344E97C9996EC8F2D /* ISO8601DateFormatter-iOS-dummy.m in Sources */,
+				981AB853B7739101D8C7FC6652818413 /* ISO8601DateFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEE6FA04A69BCB65BED7F39BED5ABBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D559607A642FF82406927D028A11A781 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		048F43F72A7E706F46871F181AFD0639 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ISO8601DateFormatterValueTransformer-iOS";
+			target = 5146B7AB0F5CF1F95A5AE83325166B6F /* ISO8601DateFormatterValueTransformer-iOS */;
+			targetProxy = 44BF53FA55DCF5C671489C228A88EC91 /* PBXContainerItemProxy */;
+		};
+		1464A457015DD461D7C457F518A966E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ISO8601DateFormatterValueTransformer-OSX";
+			target = 26E433DD20A2461B022C0AE9E55F1398 /* ISO8601DateFormatterValueTransformer-OSX */;
+			targetProxy = 02BE9373795F79BC24C429A746DFFD6E /* PBXContainerItemProxy */;
+		};
+		175ACDE3D02EF2D67A48ACC49B7E0381 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RKValueTransformers-OSX";
+			target = 0A2020E10A3C090B4BBD1F33C0BB08A2 /* RKValueTransformers-OSX */;
+			targetProxy = 45E872FB5F6BAD5DD5722EF70F1B837C /* PBXContainerItemProxy */;
+		};
+		22417C5ED559738EFCD0D9F212473AE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Expecta-iOS";
+			target = 6DA1968400C08E2853CEC1363887F04D /* Expecta-iOS */;
+			targetProxy = 9C5619C12BE82557BD94E4DEFD71711B /* PBXContainerItemProxy */;
+		};
+		32903B2117BB69FF27084F2CCD2CE379 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RKValueTransformers-iOS";
+			target = 6F5299F6992B1CE2228AF1065CDF0F1C /* RKValueTransformers-iOS */;
+			targetProxy = E478DD3EB47C1F38C364301ED7E88193 /* PBXContainerItemProxy */;
+		};
+		3AFF051689BD56B61F0C03F635FC0B75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RKValueTransformers-iOS";
+			target = 6F5299F6992B1CE2228AF1065CDF0F1C /* RKValueTransformers-iOS */;
+			targetProxy = 5E794C6E22B830D79F6D841F9B8ECC51 /* PBXContainerItemProxy */;
+		};
+		48E3571B8003E696FC2C0B0D6AA5A39D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Expecta-OSX";
+			target = 5F39FBBB83889ABE96EEC4FC42FA736C /* Expecta-OSX */;
+			targetProxy = C0A728A6E4E352C691CD538F358147C7 /* PBXContainerItemProxy */;
+		};
+		50E0CC5017AA9D6CDD1EA869208E1390 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RKValueTransformers-OSX";
+			target = 0A2020E10A3C090B4BBD1F33C0BB08A2 /* RKValueTransformers-OSX */;
+			targetProxy = 46A2FE0C2E3BA9B8E80990EA51C1B9E0 /* PBXContainerItemProxy */;
+		};
+		5CBF6E09E0298A3A9DDDA3A47F60EC0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ISO8601DateFormatter-OSX";
+			target = 605DBF1C91154E5EE7624965180A02E0 /* ISO8601DateFormatter-OSX */;
+			targetProxy = 89A73F34AD1C413010F605B95B82E91E /* PBXContainerItemProxy */;
+		};
+		A989F33E34D26C1A50B91289484EB9AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ISO8601DateFormatter-OSX";
+			target = 605DBF1C91154E5EE7624965180A02E0 /* ISO8601DateFormatter-OSX */;
+			targetProxy = 81C7E6CCA94DD14528BBA032E07CF926 /* PBXContainerItemProxy */;
+		};
+		C1D259914CCA83603F0D82CF80836518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RKValueTransformers-OSX";
+			target = 0A2020E10A3C090B4BBD1F33C0BB08A2 /* RKValueTransformers-OSX */;
+			targetProxy = C7502FA36A4841E2C62EE6F1FDE1669D /* PBXContainerItemProxy */;
+		};
+		C341249026C7C7EC5D3605447EC01A41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ISO8601DateFormatter-iOS";
+			target = 39126B9D4D70556C7D59464370043C52 /* ISO8601DateFormatter-iOS */;
+			targetProxy = 51CBC53A357A97CC6A76087E4FA82D52 /* PBXContainerItemProxy */;
+		};
+		C453B9B67E6868D3101819668BFF47C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ISO8601DateFormatter-iOS";
+			target = 39126B9D4D70556C7D59464370043C52 /* ISO8601DateFormatter-iOS */;
+			targetProxy = 848162DCD66529769B17829EAC6F54E7 /* PBXContainerItemProxy */;
+		};
+		CBF565EF89BC36B127BA590B7299F6E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ISO8601DateFormatter-iOS";
+			target = 39126B9D4D70556C7D59464370043C52 /* ISO8601DateFormatter-iOS */;
+			targetProxy = F1C5BE3ADAF6DA111AE7A3A3D161A6FD /* PBXContainerItemProxy */;
+		};
+		E2AF43ECBD520CA66530FB2F175F6E58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ISO8601DateFormatter-OSX";
+			target = 605DBF1C91154E5EE7624965180A02E0 /* ISO8601DateFormatter-OSX */;
+			targetProxy = 325C60FAA99176792F2EBF3C505C56E4 /* PBXContainerItemProxy */;
+		};
+		E88EA4080FB54807A8EC1D3F771E57D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RKValueTransformers-iOS";
+			target = 6F5299F6992B1CE2228AF1065CDF0F1C /* RKValueTransformers-iOS */;
+			targetProxy = 32FA2D6CB72FC4C08F6EEB553AB81E38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BD56DDDEF9A9D7198953983C532E34B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C309FCDADF07B76DD9DF2E4DF8AB0C4 /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		198B0F94DCC85846B5FA9ADBC68FD77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CA4B131DFFF052BCC9034D8BAF958BE /* Expecta-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Expecta-iOS/Expecta-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		22F4159FB1763C8EEBFF2AB217FD80A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF9936FCA73A7A4E9DEABB6EDF062A2 /* Expecta-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Expecta-OSX/Expecta-OSX-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		271DA1BF481AB26955D319A1BA25FC72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA787AF389C303325EC4F50EBF72DE4 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		31AC33C0FF125168EF622D1BC2D020A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5013F8D3620E5817E7AB0D257EE23B51 /* ISO8601DateFormatter-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ISO8601DateFormatter-OSX/ISO8601DateFormatter-OSX-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42D902C59743708125B7A3BD122AF313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA3B62759F3D7E9B792E55F106F0348C /* RKValueTransformers-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RKValueTransformers-iOS/RKValueTransformers-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4CF60B5DFA39461F3D5BAB716D852089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27D6BC5F6818A72FBF88A5B8174F621F /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4F35AC537DAF334A758B847DB05D4847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D7109B4DE76127203AC153F733D79C /* ISO8601DateFormatterValueTransformer-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ISO8601DateFormatterValueTransformer-iOS/ISO8601DateFormatterValueTransformer-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5E08456D6C1992B5349ED4EADA2A13CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE5EC3BAE00575794699FC9A73B60ED /* ISO8601DateFormatterValueTransformer-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ISO8601DateFormatterValueTransformer-OSX/ISO8601DateFormatterValueTransformer-OSX-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		60442AD6CEF3EDDA1002EDF580E2B3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 475B2A15484DFEF3650C35EE5AFCBFF2 /* RKValueTransformers-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RKValueTransformers-OSX/RKValueTransformers-OSX-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		61704965D7610E9678886528DA18C6DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D94B8A02B4B31213A3D8AFD9AE36F2C /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		64FD5FCE3F15B449971DC045EE956363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CA4B131DFFF052BCC9034D8BAF958BE /* Expecta-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Expecta-iOS/Expecta-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		663AE8CD5B66B8A77FA34B09ABEE2940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3110F116BBBCFA5A954BFB1040135E94 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8A07764514966B20B15055AF2731E043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5013F8D3620E5817E7AB0D257EE23B51 /* ISO8601DateFormatter-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ISO8601DateFormatter-OSX/ISO8601DateFormatter-OSX-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8BBCA2F0699E96B47EF400A3BB005D23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D7109B4DE76127203AC153F733D79C /* ISO8601DateFormatterValueTransformer-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ISO8601DateFormatterValueTransformer-iOS/ISO8601DateFormatterValueTransformer-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8E2139104E2435C919FF330416483DB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7113AAA432F9FED3AA056C963310E8D /* ISO8601DateFormatter-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ISO8601DateFormatter-iOS/ISO8601DateFormatter-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8EA6F11FE6D135F584D409F4739FDDCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D103EE23B9EEE00520B4B69707647E /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		94CEDCCEFABB27D2E9FFFAC07F90DD6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF9936FCA73A7A4E9DEABB6EDF062A2 /* Expecta-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Expecta-OSX/Expecta-OSX-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A4A1F5C60B72853225C1D753F6FB80D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE5EC3BAE00575794699FC9A73B60ED /* ISO8601DateFormatterValueTransformer-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ISO8601DateFormatterValueTransformer-OSX/ISO8601DateFormatterValueTransformer-OSX-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B8350715088139225BAB2FDC5FD77291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C343E542908FB3CCF1654E25AFF50DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7113AAA432F9FED3AA056C963310E8D /* ISO8601DateFormatter-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ISO8601DateFormatter-iOS/ISO8601DateFormatter-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CC504C3BB0EE94CC7E11C678303F46D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34C3DDF878FBF1C2CFEDED5770C113BD /* Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D79416007CCE8579CEF041BFCBB2174D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA3B62759F3D7E9B792E55F106F0348C /* RKValueTransformers-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RKValueTransformers-iOS/RKValueTransformers-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D80E8C66F49726E2A1ED56C5559E8098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F86C7D65403B78807A1A337CC7D5F46D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 475B2A15484DFEF3650C35EE5AFCBFF2 /* RKValueTransformers-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RKValueTransformers-OSX/RKValueTransformers-OSX-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FB97106CCA689DDDF36ED8C492CD4101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EABFB025CB58EAAFAA7F75D929FF4B00 /* Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		121576C74CCC703CA662E5228E42E58B /* Build configuration list for PBXNativeTarget "RKValueTransformers-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F86C7D65403B78807A1A337CC7D5F46D /* Debug */,
+				60442AD6CEF3EDDA1002EDF580E2B3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D80E8C66F49726E2A1ED56C5559E8098 /* Debug */,
+				B8350715088139225BAB2FDC5FD77291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		336E9D9E7FB94042DC76150CF6BA171A /* Build configuration list for PBXNativeTarget "Pods-Framework-ISO8601DateFormatterValueTransformer iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61704965D7610E9678886528DA18C6DB /* Debug */,
+				CC504C3BB0EE94CC7E11C678303F46D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40AB2A40D5ECEFA6E2AD57F389A64A4A /* Build configuration list for PBXNativeTarget "Expecta-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64FD5FCE3F15B449971DC045EE956363 /* Debug */,
+				198B0F94DCC85846B5FA9ADBC68FD77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8787846E49274C928D83F70AFB49BDD8 /* Build configuration list for PBXNativeTarget "ISO8601DateFormatterValueTransformer-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F35AC537DAF334A758B847DB05D4847 /* Debug */,
+				8BBCA2F0699E96B47EF400A3BB005D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E7D444B11B03DFB0C399CBFEE3E17A2 /* Build configuration list for PBXNativeTarget "ISO8601DateFormatter-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A07764514966B20B15055AF2731E043 /* Debug */,
+				31AC33C0FF125168EF622D1BC2D020A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4CE641CB4B9C59510967B192DBA4AC5 /* Build configuration list for PBXNativeTarget "ISO8601DateFormatter-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C343E542908FB3CCF1654E25AFF50DEC /* Debug */,
+				8E2139104E2435C919FF330416483DB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0CD01BC31FF50A88869615EC54EE62C /* Build configuration list for PBXNativeTarget "Pods-Framework-ISO8601DateFormatterValueTransformer macOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				663AE8CD5B66B8A77FA34B09ABEE2940 /* Debug */,
+				FB97106CCA689DDDF36ED8C492CD4101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0F0CD85902E459BDA199AD32EDBC9DF /* Build configuration list for PBXNativeTarget "RKValueTransformers-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42D902C59743708125B7A3BD122AF313 /* Debug */,
+				D79416007CCE8579CEF041BFCBB2174D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C26096B8FCC91B84FB6C5838D4A58F0E /* Build configuration list for PBXNativeTarget "ISO8601DateFormatterValueTransformer-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E08456D6C1992B5349ED4EADA2A13CF /* Debug */,
+				A4A1F5C60B72853225C1D753F6FB80D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9A7C7F9C0E3CD24182A4B672A2F535E /* Build configuration list for PBXNativeTarget "Pods-Framework-ISO8601DateFormatterValueTransformer iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CF60B5DFA39461F3D5BAB716D852089 /* Debug */,
+				0BD56DDDEF9A9D7198953983C532E34B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D22AD499F3025AFAF6DAC0C7252D6C96 /* Build configuration list for PBXNativeTarget "Expecta-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94CEDCCEFABB27D2E9FFFAC07F90DD6D /* Debug */,
+				22F4159FB1763C8EEBFF2AB217FD80A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE6B6A4F1D311DD5FECADB359A4E2391 /* Build configuration list for PBXNativeTarget "Pods-Framework-ISO8601DateFormatterValueTransformer macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271DA1BF481AB26955D319A1BA25FC72 /* Debug */,
+				8EA6F11FE6D135F584D409F4739FDDCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

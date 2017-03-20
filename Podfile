@@ -1,20 +1,27 @@
-xcodeproj 'Tests/ISO8601DateFormatterValueTransformerTests'
-workspace 'ISO8601DateFormatterValueTransformer'
-inhibit_all_warnings!
-
-def import_pods
-  pod 'Expecta', '~> 0.3.0'
-  pod 'ISO8601DateFormatterValueTransformer', :path => '.'
+def test_pods
+    pod 'Expecta', '~> 0.3.0'
+    pod 'ISO8601DateFormatterValueTransformer', :path => '.'
 end
 
-target :ios do
-  platform :ios, '5.1.1'
-  link_with 'iOS Tests'
-  import_pods
-end
+abstract_target 'Framework' do
+  pod 'RKValueTransformers', '~> 1.1.0'
+  pod 'ISO8601DateFormatter', '~> 0.7'
 
-target :osx do
-  platform :osx, '10.7'
-  link_with 'OS X Tests'
-  import_pods
+  target 'ISO8601DateFormatterValueTransformer iOS' do
+    platform :ios, '5.1.1'
+  end
+
+  target 'ISO8601DateFormatterValueTransformer macOS' do
+    platform :osx, '10.7'
+  end
+  
+  target 'ISO8601DateFormatterValueTransformer iOS Tests' do
+      platform :ios, '5.1.1'
+      test_pods
+  end
+  
+  target 'ISO8601DateFormatterValueTransformer macOS Tests' do
+      platform :osx, '10.7'
+      test_pods
+  end
 end
