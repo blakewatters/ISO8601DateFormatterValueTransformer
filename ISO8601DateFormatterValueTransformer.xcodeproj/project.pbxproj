@@ -20,6 +20,10 @@
 		FE0935651E8022290092BF67 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE0935611E8022290092BF67 /* Info.plist */; };
 		FE0935681E8022290092BF67 /* ISO8601DateFormatterValueTransformerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0935631E8022290092BF67 /* ISO8601DateFormatterValueTransformerTests.m */; };
 		FE0935691E8022290092BF67 /* ISO8601DateFormatterValueTransformerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0935631E8022290092BF67 /* ISO8601DateFormatterValueTransformerTests.m */; };
+		FE694A251E809E30009FEDE6 /* RKISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = FE694A231E809E30009FEDE6 /* RKISO8601DateFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE694A261E809E30009FEDE6 /* RKISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = FE694A231E809E30009FEDE6 /* RKISO8601DateFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE694A271E809E30009FEDE6 /* RKISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE694A241E809E30009FEDE6 /* RKISO8601DateFormatter.m */; };
+		FE694A281E809E30009FEDE6 /* RKISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE694A241E809E30009FEDE6 /* RKISO8601DateFormatter.m */; };
 		FED36EC8A426AF5BF3B558A8 /* libPods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E796188AB85B154816AD261C /* libPods-Framework-ISO8601DateFormatterValueTransformer iOS Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +67,8 @@
 		FE0935551E8021B00092BF67 /* ISO8601DateFormatterValueTransformer macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ISO8601DateFormatterValueTransformer macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0935611E8022290092BF67 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE0935631E8022290092BF67 /* ISO8601DateFormatterValueTransformerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatterValueTransformerTests.m; sourceTree = "<group>"; };
+		FE694A231E809E30009FEDE6 /* RKISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKISO8601DateFormatter.h; sourceTree = "<group>"; };
+		FE694A241E809E30009FEDE6 /* RKISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKISO8601DateFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,8 @@
 			children = (
 				FE09353A1E801FD90092BF67 /* ISO8601DateFormatterValueTransformer.h */,
 				FE09353B1E801FD90092BF67 /* ISO8601DateFormatterValueTransformer.m */,
+				FE694A231E809E30009FEDE6 /* RKISO8601DateFormatter.h */,
+				FE694A241E809E30009FEDE6 /* RKISO8601DateFormatter.m */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -179,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE09353C1E801FDD0092BF67 /* ISO8601DateFormatterValueTransformer.h in Headers */,
+				FE694A251E809E30009FEDE6 /* RKISO8601DateFormatter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE09353D1E801FDD0092BF67 /* ISO8601DateFormatterValueTransformer.h in Headers */,
+				FE694A261E809E30009FEDE6 /* RKISO8601DateFormatter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE694A271E809E30009FEDE6 /* RKISO8601DateFormatter.m in Sources */,
 				FE09353E1E801FE90092BF67 /* ISO8601DateFormatterValueTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +532,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE694A281E809E30009FEDE6 /* RKISO8601DateFormatter.m in Sources */,
 				FE09353F1E801FE90092BF67 /* ISO8601DateFormatterValueTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
