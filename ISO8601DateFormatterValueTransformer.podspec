@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'ISO8601DateFormatterValueTransformer'
-  s.version  = '0.7.2'
+  s.version  = '0.7.3'
   s.license  = 'Apache2'
   s.summary  = 'A small library that integrates ISO8601DateFormatter with RKValueTransformers'
   s.homepage = 'https://github.com/blakewatters/ISO8601DateFormatterValueTransformer'

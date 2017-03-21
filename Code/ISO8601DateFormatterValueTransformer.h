@@ -19,7 +19,7 @@
 //
 
 #import <RKValueTransformers/RKValueTransformers.h>
-#import "ISO8601DateFormatter.h"
+#import <ISO8601/ISO8601.h>
 
 /**
  The `RKValueTransformers` category extends ISO8601DateFormatter to support the `RKValueTransforming` interface, making it usable with the RestKit value transformation architecture.

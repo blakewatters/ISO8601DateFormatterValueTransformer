@@ -1,0 +1,6 @@
+[submodule "Carthage/Checkouts/iso-8601-date-formatter"]
+	path = Carthage/Checkouts/iso-8601-date-formatter
+url=https://github.com/arturgrigor/iso-8601-date-formatter.git
+[submodule "Carthage/Checkouts/RKValueTransformers"]
+	path = Carthage/Checkouts/RKValueTransformers
+	url = https://github.com/arturgrigor/RKValueTransformers.git

@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_Framework_ISO8601DateFormatterValueTransformer_macOS : NSObject
-@end
-@implementation PodsDummy_Pods_Framework_ISO8601DateFormatterValueTransformer_macOS
-@end
