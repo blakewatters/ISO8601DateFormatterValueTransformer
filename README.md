@@ -1,6 +1,11 @@
 ISO8601DateFormatterValueTransformer
 ====================================
 
+[![Build Status](https://travis-ci.org/arturgrigor/ISO8601DateFormatterValueTransformer.png?branch=master,development)](https://travis-ci.org/arturgrigor/ISO8601DateFormatterValueTransformer)
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+![Pod Version](https://cocoapod-badges.herokuapp.com/v/ISO8601DateFormatterValueTransformer/badge.png) 
+![Pod Platform](https://cocoapod-badges.herokuapp.com/p/ISO8601DateFormatterValueTransformer/badge.png)
+
 A small Objective-C library that integrates Peter Hosey's [ISO8601DateFormatter](https://github.com/boredzo/iso-8601-date-formatter) 
 with [RKValueTransformers](https://github.com/RestKit/RKValueTransformers).
 
