@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3BBC73088FD3817ECC38C55B /* libPods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBBB48FC26241B84D4586AB /* libPods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.a */; };
-		AD23960ED16E2CEDB1AC6F7F /* libPods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F9B84076114909FE01CE99 /* libPods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.a */; };
 		FE09353C1E801FDD0092BF67 /* ISO8601DateFormatterValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = FE09353A1E801FD90092BF67 /* ISO8601DateFormatterValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE09353D1E801FDD0092BF67 /* ISO8601DateFormatterValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = FE09353A1E801FD90092BF67 /* ISO8601DateFormatterValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE09353E1E801FE90092BF67 /* ISO8601DateFormatterValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE09353B1E801FD90092BF67 /* ISO8601DateFormatterValueTransformer.m */; };
@@ -17,6 +15,8 @@
 		FE09355A1E8021B00092BF67 /* ISO8601DateFormatterValueTransformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0935311E801FB60092BF67 /* ISO8601DateFormatterValueTransformer.framework */; };
 		FE0935681E8022290092BF67 /* ISO8601DateFormatterValueTransformerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0935631E8022290092BF67 /* ISO8601DateFormatterValueTransformerTests.m */; };
 		FE0935691E8022290092BF67 /* ISO8601DateFormatterValueTransformerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0935631E8022290092BF67 /* ISO8601DateFormatterValueTransformerTests.m */; };
+		FE22D99D1F44663700FBB6F6 /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE22D9791F44659200FBB6F6 /* Expecta.framework */; };
+		FE22D9A21F44667B00FBB6F6 /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE22D97B1F44659200FBB6F6 /* Expecta.framework */; };
 		FE6701DE1E817E760070340C /* ISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDAD981E8179BC00A49D53 /* ISO8601.framework */; };
 		FEFDADA81E817A0200A49D53 /* ISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDAD981E8179BC00A49D53 /* ISO8601.framework */; };
 		FEFDADA91E817A0800A49D53 /* RKValueTransformers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDADA11E8179C900A49D53 /* RKValueTransformers.framework */; };
@@ -24,19 +24,89 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FE09354C1E8021A00092BF67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE0935181E801F900092BF67 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FE0935201E801F900092BF67;
-			remoteInfo = "ISO8601DateFormatterValueTransformer iOS";
-		};
 		FE09355B1E8021B00092BF67 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FE0935181E801F900092BF67 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FE0935301E801FB60092BF67;
 			remoteInfo = "ISO8601DateFormatterValueTransformer macOS";
+		};
+		FE22D9781F44659200FBB6F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE22D96D1F44659200FBB6F6 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 908379791A8B972C009844DA;
+			remoteInfo = Expecta;
+		};
+		FE22D97A1F44659200FBB6F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE22D96D1F44659200FBB6F6 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 908379111A8B9660009844DA;
+			remoteInfo = "Expecta-iOS";
+		};
+		FE22D97C1F44659200FBB6F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE22D96D1F44659200FBB6F6 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A0A598C1AD4418C003DA3E4;
+			remoteInfo = ExpectaTests;
+		};
+		FE22D97E1F44659200FBB6F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE22D96D1F44659200FBB6F6 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A0A59BF1AD441CB003DA3E4;
+			remoteInfo = "Expecta-iOSTests";
+		};
+		FE22D9801F44659200FBB6F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE22D96D1F44659200FBB6F6 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9ACDF0C13B2DD520010F4D7;
+			remoteInfo = libExpecta;
+		};
+		FE22D9821F44659200FBB6F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE22D96D1F44659200FBB6F6 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E93067CE13B2E6D100EA26FF;
+			remoteInfo = "libExpecta-iOS";
+		};
+		FE22D9841F44659200FBB6F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE22D96D1F44659200FBB6F6 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C4416F917FF3F4A00978F09;
+			remoteInfo = libExpectaTests;
+		};
+		FE22D9861F44659200FBB6F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE22D96D1F44659200FBB6F6 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E93067DA13B2E6D100EA26FF;
+			remoteInfo = "libExpecta-iOSTests";
+		};
+		FE22D9991F44662500FBB6F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE0935181E801F900092BF67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE0935201E801F900092BF67;
+			remoteInfo = "ISO8601DateFormatterValueTransformer iOS";
+		};
+		FE22D99B1F44663100FBB6F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE22D96D1F44659200FBB6F6 /* Expecta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 908379781A8B972C009844DA;
+			remoteInfo = Expecta;
+		};
+		FE22D99E1F44667200FBB6F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE22D96D1F44659200FBB6F6 /* Expecta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 908379101A8B9660009844DA;
+			remoteInfo = "Expecta-iOS";
 		};
 		FEFDAD8F1E8179BC00A49D53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -104,22 +174,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		55F9B84076114909FE01CE99 /* libPods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C8851A540897D149E5634EA /* Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests/Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8EBBB48FC26241B84D4586AB /* libPods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D70A880965EEBFD85A4A700F /* Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests/Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DAA78C53680F4B1C66F24DD9 /* Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests/Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E862AD5988965C046924CC88 /* Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests/Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FE0935211E801F900092BF67 /* ISO8601DateFormatterValueTransformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ISO8601DateFormatterValueTransformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0935311E801FB60092BF67 /* ISO8601DateFormatterValueTransformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ISO8601DateFormatterValueTransformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE09353A1E801FD90092BF67 /* ISO8601DateFormatterValueTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatterValueTransformer.h; sourceTree = "<group>"; };
 		FE09353B1E801FD90092BF67 /* ISO8601DateFormatterValueTransformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatterValueTransformer.m; sourceTree = "<group>"; };
 		FE0935401E80202F0092BF67 /* ISO8601DateFormatterValueTransformer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ISO8601DateFormatterValueTransformer.podspec; sourceTree = "<group>"; };
-		FE0935411E80202F0092BF67 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FE0935461E8021A00092BF67 /* ISO8601DateFormatterValueTransformer iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ISO8601DateFormatterValueTransformer iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0935551E8021B00092BF67 /* ISO8601DateFormatterValueTransformer macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ISO8601DateFormatterValueTransformer macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0935611E8022290092BF67 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE0935631E8022290092BF67 /* ISO8601DateFormatterValueTransformerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatterValueTransformerTests.m; sourceTree = "<group>"; };
+		FE22D96D1F44659200FBB6F6 /* Expecta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Expecta.xcodeproj; path = Carthage/Checkouts/expecta/Expecta.xcodeproj; sourceTree = "<group>"; };
+		FE22D9941F4465E200FBB6F6 /* Expecta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Expecta.framework; path = Carthage/Checkouts/RKValueTransformers/Carthage/Checkouts/expecta/build/Debug/Expecta.framework; sourceTree = "<group>"; };
+		FE22D9A01F44667600FBB6F6 /* Expecta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Expecta.framework; path = "Carthage/Checkouts/RKValueTransformers/Carthage/Checkouts/expecta/build/Debug-iphoneos/Expecta.framework"; sourceTree = "<group>"; };
 		FEFDAD871E8179BC00A49D53 /* ISO8601ForCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ISO8601ForCocoa.xcodeproj; path = "Carthage/Checkouts/iso-8601-date-formatter/ISO8601ForCocoa/ISO8601ForCocoa.xcodeproj"; sourceTree = "<group>"; };
 		FEFDAD991E8179C800A49D53 /* RKValueTransformers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RKValueTransformers.xcodeproj; path = Carthage/Checkouts/RKValueTransformers/RKValueTransformers.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,8 +213,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE22D9A21F44667B00FBB6F6 /* Expecta.framework in Frameworks */,
 				FE09354B1E8021A00092BF67 /* ISO8601DateFormatterValueTransformer.framework in Frameworks */,
-				3BBC73088FD3817ECC38C55B /* libPods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,46 +222,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE22D99D1F44663700FBB6F6 /* Expecta.framework in Frameworks */,
 				FE09355A1E8021B00092BF67 /* ISO8601DateFormatterValueTransformer.framework in Frameworks */,
-				AD23960ED16E2CEDB1AC6F7F /* libPods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		364612A4A0C10FCA59F6152E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6C8851A540897D149E5634EA /* Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.debug.xcconfig */,
-				D70A880965EEBFD85A4A700F /* Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.release.xcconfig */,
-				DAA78C53680F4B1C66F24DD9 /* Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.debug.xcconfig */,
-				E862AD5988965C046924CC88 /* Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A023EEBF4E01F8EF23ED4BA0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8EBBB48FC26241B84D4586AB /* libPods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.a */,
-				55F9B84076114909FE01CE99 /* libPods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		FE0935171E801F900092BF67 = {
 			isa = PBXGroup;
 			children = (
 				FE0935401E80202F0092BF67 /* ISO8601DateFormatterValueTransformer.podspec */,
-				FE0935411E80202F0092BF67 /* Podfile */,
 				FE0935391E801FD90092BF67 /* Code */,
 				FE0935601E8022290092BF67 /* Tests */,
 				FE0935221E801F900092BF67 /* Products */,
-				364612A4A0C10FCA59F6152E /* Pods */,
-				A023EEBF4E01F8EF23ED4BA0 /* Frameworks */,
 				FEFDAD991E8179C800A49D53 /* RKValueTransformers.xcodeproj */,
 				FEFDAD871E8179BC00A49D53 /* ISO8601ForCocoa.xcodeproj */,
+				FE22D96D1F44659200FBB6F6 /* Expecta.xcodeproj */,
+				FE22D9931F4465E100FBB6F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,6 +271,30 @@
 				FE0935631E8022290092BF67 /* ISO8601DateFormatterValueTransformerTests.m */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		FE22D96E1F44659200FBB6F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE22D9791F44659200FBB6F6 /* Expecta.framework */,
+				FE22D97B1F44659200FBB6F6 /* Expecta.framework */,
+				FE22D97D1F44659200FBB6F6 /* ExpectaTests.xctest */,
+				FE22D97F1F44659200FBB6F6 /* Expecta-iOSTests.xctest */,
+				FE22D9811F44659200FBB6F6 /* libExpecta.a */,
+				FE22D9831F44659200FBB6F6 /* libExpecta.a */,
+				FE22D9851F44659200FBB6F6 /* libExpectaTests.xctest */,
+				FE22D9871F44659200FBB6F6 /* libExpecta-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE22D9931F4465E100FBB6F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE22D9A01F44667600FBB6F6 /* Expecta.framework */,
+				FE22D9941F4465E200FBB6F6 /* Expecta.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FEFDAD881E8179BC00A49D53 /* Products */ = {
@@ -313,17 +382,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE09354E1E8021A00092BF67 /* Build configuration list for PBXNativeTarget "ISO8601DateFormatterValueTransformer iOS Tests" */;
 			buildPhases = (
-				DE0064256A9599668BF810AC /* [CP] Check Pods Manifest.lock */,
 				FE0935421E8021A00092BF67 /* Sources */,
 				FE0935431E8021A00092BF67 /* Frameworks */,
 				FE0935441E8021A00092BF67 /* Resources */,
-				F4835C274005D8557946C380 /* [CP] Embed Pods Frameworks */,
-				7E5D10A0E6FBBE2380E79EFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FE09354D1E8021A00092BF67 /* PBXTargetDependency */,
+				FE22D99F1F44667200FBB6F6 /* PBXTargetDependency */,
+				FE22D99A1F44662500FBB6F6 /* PBXTargetDependency */,
 			);
 			name = "ISO8601DateFormatterValueTransformer iOS Tests";
 			productName = "ISO8601DateFormatterValueTransformer iOS Tests";
@@ -334,16 +401,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE09355D1E8021B00092BF67 /* Build configuration list for PBXNativeTarget "ISO8601DateFormatterValueTransformer macOS Tests" */;
 			buildPhases = (
-				59FBEEFBACA26C17A1C88A0E /* [CP] Check Pods Manifest.lock */,
 				FE0935511E8021B00092BF67 /* Sources */,
 				FE0935521E8021B00092BF67 /* Frameworks */,
 				FE0935531E8021B00092BF67 /* Resources */,
-				F9D46A557D385C197EAE77C6 /* [CP] Embed Pods Frameworks */,
-				C16B3586841BA8473065862B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FE22D99C1F44663100FBB6F6 /* PBXTargetDependency */,
 				FE09355C1E8021B00092BF67 /* PBXTargetDependency */,
 			);
 			name = "ISO8601DateFormatterValueTransformer macOS Tests";
@@ -390,6 +455,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = FE22D96E1F44659200FBB6F6 /* Products */;
+					ProjectRef = FE22D96D1F44659200FBB6F6 /* Expecta.xcodeproj */;
+				},
+				{
 					ProductGroup = FEFDAD881E8179BC00A49D53 /* Products */;
 					ProjectRef = FEFDAD871E8179BC00A49D53 /* ISO8601ForCocoa.xcodeproj */;
 				},
@@ -409,6 +478,62 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		FE22D9791F44659200FBB6F6 /* Expecta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Expecta.framework;
+			remoteRef = FE22D9781F44659200FBB6F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE22D97B1F44659200FBB6F6 /* Expecta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Expecta.framework;
+			remoteRef = FE22D97A1F44659200FBB6F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE22D97D1F44659200FBB6F6 /* ExpectaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ExpectaTests.xctest;
+			remoteRef = FE22D97C1F44659200FBB6F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE22D97F1F44659200FBB6F6 /* Expecta-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Expecta-iOSTests.xctest";
+			remoteRef = FE22D97E1F44659200FBB6F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE22D9811F44659200FBB6F6 /* libExpecta.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libExpecta.a;
+			remoteRef = FE22D9801F44659200FBB6F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE22D9831F44659200FBB6F6 /* libExpecta.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libExpecta.a;
+			remoteRef = FE22D9821F44659200FBB6F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE22D9851F44659200FBB6F6 /* libExpectaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = libExpectaTests.xctest;
+			remoteRef = FE22D9841F44659200FBB6F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE22D9871F44659200FBB6F6 /* libExpecta-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "libExpecta-iOSTests.xctest";
+			remoteRef = FE22D9861F44659200FBB6F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		FEFDAD901E8179BC00A49D53 /* libISO8601ForCocoa.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -505,99 +630,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		59FBEEFBACA26C17A1C88A0E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7E5D10A0E6FBBE2380E79EFC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests/Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C16B3586841BA8473065862B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests/Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DE0064256A9599668BF810AC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F4835C274005D8557946C380 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests/Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F9D46A557D385C197EAE77C6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests/Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		FE09351C1E801F900092BF67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -634,15 +666,25 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FE09354D1E8021A00092BF67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FE0935201E801F900092BF67 /* ISO8601DateFormatterValueTransformer iOS */;
-			targetProxy = FE09354C1E8021A00092BF67 /* PBXContainerItemProxy */;
-		};
 		FE09355C1E8021B00092BF67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FE0935301E801FB60092BF67 /* ISO8601DateFormatterValueTransformer macOS */;
 			targetProxy = FE09355B1E8021B00092BF67 /* PBXContainerItemProxy */;
+		};
+		FE22D99A1F44662500FBB6F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE0935201E801F900092BF67 /* ISO8601DateFormatterValueTransformer iOS */;
+			targetProxy = FE22D9991F44662500FBB6F6 /* PBXContainerItemProxy */;
+		};
+		FE22D99C1F44663100FBB6F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Expecta;
+			targetProxy = FE22D99B1F44663100FBB6F6 /* PBXContainerItemProxy */;
+		};
+		FE22D99F1F44667200FBB6F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Expecta-iOS";
+			targetProxy = FE22D99E1F44667200FBB6F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -823,7 +865,6 @@
 		};
 		FE09354F1E8021A00092BF67 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C8851A540897D149E5634EA /* Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -834,7 +875,6 @@
 		};
 		FE0935501E8021A00092BF67 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D70A880965EEBFD85A4A700F /* Pods-Tests-ISO8601DateFormatterValueTransformer iOS Tests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -845,7 +885,6 @@
 		};
 		FE09355E1E8021B00092BF67 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAA78C53680F4B1C66F24DD9 /* Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -860,7 +899,6 @@
 		};
 		FE09355F1E8021B00092BF67 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E862AD5988965C046924CC88 /* Pods-Tests-ISO8601DateFormatterValueTransformer macOS Tests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
