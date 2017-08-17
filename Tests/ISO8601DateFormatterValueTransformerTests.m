@@ -20,7 +20,7 @@
 
 #import <XCTest/XCTest.h>
 #define EXP_SHORTHAND
-#import "Expecta.h"
+#import <Expecta/Expecta.h>
 #import "ISO8601DateFormatterValueTransformer.h"
 
 @interface RKValueTransformers_ISO8601DateFormatterTests : XCTestCase
